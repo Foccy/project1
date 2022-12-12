@@ -17,6 +17,8 @@ header nav .header_bottom .inner .logo { width: 20%; height: 78px; line-height: 
 header nav .header_bottom .inner .logo a { display: block; height: 100%; width: 100%; background: url(../images/gunbosim.png) no-repeat center center; } 
 header nav .header_bottom .inner .logo a img { display: none; } 
 header nav .header_bottom .inner .navul { width: 70%; height: 40px; margin: auto; display: flex; flex-direction: row; justify-content: space-evenly; align-items: flex-end; } 
+header nav .header_bottom .inner .navul .ul{ font-size: 1.5em; text-align: center; color: #e95a65; padding-top: 2px;}
+header nav .header_bottom .inner .navul .ul li a{font-size: 1em; font-weight: bold; line-height: 180%;}
 header nav .header_bottom .inner .navul li { width: 10%; height: 10%; text-align: center; line-height: 10px; } 
 header nav .header_bottom .inner .navul li a { color: white; font-weight: 1000; font-size: 20px; } 
 header nav .header_bottom .inner .navul li a::before { content: ""; width: 0%; height: 5px; background: #6274d8; position: absolute; bottom: 0; } 

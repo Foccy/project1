@@ -4,27 +4,42 @@ li { list-style: none; }
 .pr { position: relative; } 
 .w100 { width: 100%; } 
 .w1280 { max-width: 1280px; width: 100%; margin: auto; } 
+body a { width: 60%; font-size: 20px; line-height: 1.618; line-height: 1.75;  }
+a:focus{outline:4px dashed rgb(17, 0, 255); background: rgb(252, 252, 252); color:rgb(255, 0, 0);}   
+
 
 header { position: absolute; width: 100%; } 
 header .ex .dep0 { width: 100%; max-width: 1280px; margin: auto; display: flex; justify-content: flex-end; } 
 header .ex .dep0 li a { font-size: 20px; padding: 5px; } 
 
-header nav { position: relative; width: 100%; height: 50px; margin-top: 41px;
- background: rgba(255, 255, 255, 0); overflow: hidden; } 
-header nav:hover { background-color: rgb(245, 172, 172); height: 488px; margin-top: 41px; } 
+header nav { position: relative; width: 100%; height: 50px; margin-top: 41px; background: rgba(255, 255, 255, 0); overflow: hidden; } 
+header nav:hover { background-color: rgb(255, 255, 255); height: 488px; margin-top: 41px; } 
 
 header nav .dep1 { width: 100%; max-width: 1280px; margin: auto; display: flex; justify-content: center; } 
 
-header nav .dep1 .list1 a img { margin-right: 100px; margin-top: 10px; } 
+header nav .dep1 .list0 a img { margin-right: 100px; margin-top: 10px; } 
 
+header nav .dep1 .list1{display: flex; flex-direction: column;}
+header nav .dep1 .list1:first-child:hover{color: gray;}
 header nav .dep1 .list1 h2 a:before { content: ""; display: block; width: 0%; height: 4px; background: #1634db; position: relative; top: 42px; } 
-header nav .dep1 .list1 h2 a:hover:before { width: 50%; } 
-header nav .dep1 .list1 h2 a { font-size: 25px; font-weight: bold; color: white; } 
+header nav .dep1 .list1 h2 a:hover:before { width: 80%; } 
+header nav .dep1 .list1 h2 a { font-size: 25px; font-weight: bold; color: rgb(240, 186, 186); display: block; height: 70px;} 
 
-header nav .dep1 .list1 .dep2 li { width: 200px; margin: 10px; padding: 5px; } 
+
+
+header nav .dep1 .list1 .dep2 li { width: 200px;  padding: 10px; text-align: left; } 
 header nav .dep1 .list1 .dep2 li a { font-size: 17px; color: rgb(46, 46, 46); text-align: left; } 
+header nav .dep1 .list1 .dep2 li a:hover { color:rgb(113, 113, 248); text-decoration: underline; } 
 
 header nav .dep1 .list2 a img { margin-top: 20px; } 
 
 #main_slide .slide_cover { max-width: 100%; } 
 #main_slide .slide_cover img { width: 100%; } 
+
+
+
+#second_slide, #third_slide, #fourth_slide{background-color: white; border:3px solid black;width:100%;height:1180px; position: relative;}
+section .wrap{position:relative; max-width: 1280px; width: 100%; margin: auto; background-color: skyblue; height: 1180px;}
+
+#footer{background-color: white; border:3px solid black;width:100%;height:260px; position: relative;}
+footer .wrap{position:relative; max-width: 1280px; width: 100%; margin: auto; background-color: skyblue; height: 260px;}

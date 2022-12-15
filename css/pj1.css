@@ -1,234 +1,55 @@
-li {
-  list-style: none;
-}
-.df {
-  display: flex;
-}
-.pa {
-  position: absolute;
-  left: 0;
-}
-.pr {
-  position: relative;
-}
-.w100 {
-  width: 100%;
-}
-.w1280 {
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
-}
-body .side_bar_menu {
-  position: fixed;
-  top: 50%;
-}
-body a {
-  width: 60%;
-  font-size: 20px;
-  line-height: 1.618;
-  line-height: 1.75;
-}
-a:focus {
-  outline: 4px dashed rgb(17, 0, 255);
-  background: rgb(252, 252, 252);
-  color: rgb(255, 0, 0);
-}
+li { list-style: none; } 
+.df { display: flex; } 
+.pa { position: absolute; left: 0; } 
+.pr { position: relative; } 
+.w100 { width: 100%; } 
+.w1280 { max-width: 1280px; width: 100%; margin: auto; } 
+body .side_bar_menu { position: fixed; top: 50%; } 
+body a { width: 60%; font-size: 20px; line-height: 1.618; line-height: 1.75; } 
+a:focus { outline: 4px dashed rgb(17, 0, 255); background: rgb(252, 252, 252); color: rgb(255, 0, 0); } 
 
-header {
-  position: absolute;
-  width: 100%;
-}
-header .ex .dep0 {
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
-  display: flex;
-  justify-content: flex-end;
-}
-header .ex .dep0 li a {
-  font-size: 20px;
-  padding: 5px;
-}
+header { position: absolute; width: 100%; } 
+header .ex .dep0 { width: 100%; max-width: 1280px; margin: auto; display: flex; justify-content: flex-end; } 
+header .ex .dep0 li { padding:5px; } 
+header .ex .dep0 li input { width: 175px; height: 24px; background-color:rgba(255, 255, 255, 0); border:none; border-bottom: 1px solid rgb(255, 255, 255);} 
+header .ex .dep0 li a { font-size: 13px; padding: 7px; color:white; font-weight: 400;} 
 
-header nav {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  margin-top: 41px;
-  background: rgba(255, 255, 255, 0);
-  overflow: hidden;
-}
-header nav:hover {
-  background-color: rgb(255, 255, 255);
-  height: 488px;
-  margin-top: 41px;
-}
+header nav { position: relative; width: 100%; height: 50px; margin-top: 41px; background: rgba(255, 255, 255, 0); overflow: hidden; } 
+header nav:hover { background-color: rgb(255, 255, 255); height: 488px; margin-top: 41px; } 
 
-header nav .dep1 {
-  width: 100%;
-  max-width: 1280px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
+header nav .dep1 { width: 100%; max-width: 1280px; margin: auto; display: flex; justify-content: center; } 
 
-header nav .dep1 .list0 a img {
-  margin-right: 100px;
-  margin-top: 10px;
-}
+header nav .dep1 .list0 a img { margin-right: 100px; margin-top: 10px; } 
 
-header nav .dep1 .list1 {
-  display: flex;
-  flex-direction: column;
-}
-header nav .dep1 .list1:first-child:hover {
-  color: gray;
-}
-header nav .dep1 .list1 h2 a:before {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 4px;
-  background: #1634db;
-  position: relative;
-  top: 42px;
-}
-header nav .dep1 .list1 h2 a:hover:before {
-  width: 80%;
-}
-header nav .dep1 .list1 h2 a {
-  font-size: 25px;
-  font-weight: bold;
-  color: rgb(240, 186, 186);
-  display: block;
-  height: 70px;
-}
+header nav .dep1 .list1 { display: flex; flex-direction: column; } 
+header nav .dep1 .list1:first-child:hover { color: gray; } 
+header nav .dep1 .list1 h2 a:before { content: ""; display: block; width: 0%; height: 4px; background: #1634db; position: relative; top: 42px; } 
+header nav .dep1 .list1 h2 a:hover:before { width: 80%; } 
+header nav .dep1 .list1 h2 a { font-size: 20px; font-weight: bold; color: rgb(240, 186, 186); display: block; height: 70px; } 
 
-header nav .dep1 .list1 .dep2 li {
-  width: 200px;
-  padding: 10px;
-  text-align: left;
-}
-header nav .dep1 .list1 .dep2 li a {
-  font-size: 17px;
-  color: rgb(46, 46, 46);
-  text-align: left;
-}
-header nav .dep1 .list1 .dep2 li a:hover {
-  color: rgb(113, 113, 248);
-  text-decoration: underline;
-}
+header nav .dep1 .list1 .dep2 li { width: 200px; padding: 10px; text-align: left; } 
+header nav .dep1 .list1 .dep2 li a { font-size: 17px; color: rgb(46, 46, 46); text-align: left; } 
+header nav .dep1 .list1 .dep2 li a:hover { color: rgb(113, 113, 248); text-decoration: underline; } 
 
-header nav .dep1 .list2 a img {
-  margin-top: 20px;
-}
+header nav .dep1 .list2 a img { margin-top: 12px; } 
 
-section h2 {
-  text-align: center;
-  font-size: 60px;
-  font-weight: 900;
-}
-section .wrap {
-  position: relative;
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
-  background-color: skyblue;
-  height: 1180px;
-}
-#main_slide .slide_cover .slide_cover_blah {
-  position: relative;
-  top: 50vh;
-}
-#main_slide .slide_cover .slide_cover_blah .say1 {
-  position: absolute;
-  top: -50px;
-  right: 50px;
-  font-size: 30px;
-  color: white;
-  font-weight: 400;
-  text-shadow: 4px 5px 5px rgb(134, 134, 134);
-}
-#main_slide .slide_cover .slide_cover_blah .say2 {
-  position: absolute;
-  top: 0px;
-  right: 50px;
-  font-size: 40px;
-  color: white;
-  font-weight: 600;
-  text-shadow: 4px 5px 5px rgb(134, 134, 134);
-}
-#main_slide .slide_cover a img {
-  width: 100%;
-  top: 80vh;
-}
-#main_slide .slide_cover .mainfunc {
-  position: absolute;
-  top: 46vh;
-  left: -2vw;
-}
-#main_slide .slide_cover .mainfunc {
-  display: flex;
-  align-items: flex-end;
-}
-#main_slide .slide_cover .mainfunc li {
-  border: none;
-  background-color: white;
-  border-radius: 15px;
-  width: 115px;
-  height: 115px;
-  margin: 7px;
-  text-align: center;
-  font-weight: bold;
-}
-#main_slide .slide_cover .mainfunc li a img {
-  width: 60px;
-  height: 60px;
-  padding: 10px 0 0 20px;
-}
+section h2 { text-align: center; font-size: 60px; font-weight: 900; } 
+section .wrap { position: relative; max-width: 1280px; width: 100%; margin: auto; background-color: skyblue; height: 1180px; } 
+#main_slide .slide_cover .slide_cover_blah { position: relative; top: 50vh; } 
+#main_slide .slide_cover .slide_cover_blah .say1 { position: absolute; top: -50px; right: 50px; font-size: 30px; color: white; font-weight: 400; text-shadow: 4px 5px 5px rgb(134, 134, 134); } 
+#main_slide .slide_cover .slide_cover_blah .say2 { position: absolute; top: 0px; right: 50px; font-size: 40px; color: white; font-weight: 600; text-shadow: 4px 5px 5px rgb(134, 134, 134); } 
+#main_slide .slide_cover a img { width: 100%; top: 80vh; } 
+#main_slide .slide_cover .mainfunc { position: absolute; top: 30vh; left: -2vw; } 
+#main_slide .slide_cover .mainfunc { display: flex; align-items: flex-end; } 
+#main_slide .slide_cover .mainfunc li { border: none; background-color: white; border-radius: 15px; width: 115px; height: 115px; margin: 7px; text-align: center; font-weight: bold; box-shadow: 2px 2px 2px rgb(143, 143, 143); } 
+#main_slide .slide_cover .mainfunc li a img { width: 40px; height: 40px; padding: 16px 0 0 37px; } 
 
-#second_slide {
-  background-color: white;
-  border: 3px solid black;
-  width: 100%;
-  height: 1180px;
-  position: relative;
-}
-#second_slide h3 {
-  text-align: center;
-  color: gray;
-  font-size: 20px;
-}
+#second_slide { background-color: white; border: 3px solid black; width: 100%; height: 1180px; position: relative; } 
+#second_slide h3 { text-align: center; color: gray; font-size: 20px; } 
 
-#third_slide {
-  background-color: #e8f0f5;
-  border: 3px solid black;
-  width: 100%;
-  height: 1180px;
-  position: relative;
-}
+#third_slide { background-color: #e8f0f5; border: 3px solid black; width: 100%; height: 1180px; position: relative; } 
 
-#fourth_slide {
-  background: url(images/hiraservice_bg.png);
-  border: 3px solid black;
-  width: 100%;
-  height: 1180px;
-  position: relative;
-}
+#fourth_slide { background: url(images/hiraservice_bg.png); border: 3px solid black; width: 100%; height: 1180px; position: relative; } 
 
-#footer {
-  background-color: white;
-  border: 3px solid black;
-  width: 100%;
-  height: 260px;
-  position: relative;
-}
-footer .wrap {
-  position: relative;
-  max-width: 1280px;
-  width: 100%;
-  margin: auto;
-  background-color: skyblue;
-  height: 260px;
-}
+#footer { background-color: white; border: 3px solid black; width: 100%; height: 260px; position: relative; } 
+footer .wrap { position: relative; max-width: 1280px; width: 100%; margin: auto; background-color: skyblue; height: 260px; } 

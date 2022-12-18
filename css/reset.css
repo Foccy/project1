@@ -6,6 +6,7 @@ a { text-decoration: none; color: #222; }
 a:hover { color: #000; } 
 
 /* 폰트초기화 */
+body {webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 html { /*16px의 62.5%=10px // 1rem -> 10px*/
  font-size: 62.5%; overflow-x: hidden; overflow-y: scroll; } 
 body,

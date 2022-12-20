@@ -60,15 +60,13 @@ a:focus {
   background: rgb(252, 252, 252);
   color: rgb(255, 0, 0);
 }
-
-header {
-  position: absolute;
-  width: 100%;
+header{
+  background-image: url(../images/mainimage1.jpg);
 }
 header .ex .dep0 {
   width: 100%;
   max-width: 1280px;
-  margin: auto;
+  
   display: flex;
   justify-content: flex-end;
 }
@@ -78,6 +76,7 @@ header .ex .dep0 li {
 header .ex .dep0 li input {
   width: 175px;
   height: 24px;
+  color:rgb(231, 46, 46);
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -177,7 +176,6 @@ section h3 {
 }
 
 #main_slide .slide_cover .slide_cover_blah {
-  position: relative;
   top: 50vh;
 }
 #main_slide .slide_cover .slide_cover_blah .say1 {
@@ -358,7 +356,7 @@ section h3 {
   font-size: 14px;
   line-height: 3;
 }
-.info2-1 li {
+.info2-1 li span{
   border-radius: 10px;
   background-color: #ecfafb;
 }
@@ -660,6 +658,9 @@ section h3 {
   justify-content: space-between;
   margin-top: 30px;
 }
+.float{
+  float: right;
+}
 .footul2,
 .footul3 {
   color: rgb(138, 138, 138);
@@ -672,18 +673,34 @@ section h3 {
 }
 .footul3{
   position: absolute;
-  left:600px;
+  left:650px;
+}
+.footul3 li a span {
+  color:rgb(182, 182, 182);
+  font-weight: 100;
+
 }
 .footul3 li:first-child{
   color:rgb(182, 182, 182);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
-.footul3 .ARS1644{
-  display: inline-block;
+.footul3 li span{
+  margin-left: 10px;
 }
 .footul3:first-child{
   line-height: 2;
+}
+.footul4 li span a i{
+  width:30px;
+  height: 30px;
+ 
+  background-color: white;
+}
+.footul5{
+  position:absolute;
+  top:55px;
+  right:-11px;
 }
 .footul5 li {
   padding: 5px;
@@ -709,4 +726,9 @@ section h3 {
 .flex > h3 {
   height: 50px;
   line-height: 50px;
+}
+form{
+  position: absolute;
+  top:0;
+  right:0;
 }

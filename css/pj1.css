@@ -1,3 +1,28 @@
+/* layer popup */
+#layer{
+  display: block;
+  position: fixed;
+  width:500px;
+  height: 500px;
+  background: #ccc;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+  z-index:90999099090;
+  font-size: 2.4em;
+  padding:3em;
+  box-sizing: border-box;
+  line-height: 2;
+  top:50px;
+  left:150px;
+}
+#layer button{
+  position: absolute;
+  cursor: pointer;
+  padding:10px 20px;
+  right:0;
+  top:0;
+  background-color: #222;
+  color:#fff;
+}
 li {
   list-style: none;
 }
@@ -611,6 +636,9 @@ section h3 {
   top: -260px;
   background: #313849;
 }
+.footer_inner1 .footul li:nth-child(3){
+  color:#b0b8e0
+}
 .footer_inner2 {
   width: 100%;
   height: 200px;
@@ -634,11 +662,33 @@ section h3 {
 }
 .footul2,
 .footul3 {
-  color: gray;
+  color: rgb(138, 138, 138);
+  font-size: 15px;
 }
-.footul3 h3 {
-  color: rgb(176, 176, 176);
+.footul2{
+  position: absolute;
+  right:710px;
+  line-height: 2.5;
 }
+.footul3{
+  position: absolute;
+  left:600px;
+}
+.footul3 li:first-child{
+  color:rgb(182, 182, 182);
+  font-size: 15px;
+  font-weight: bold;
+}
+.footul3 .ARS1644{
+  display: inline-block;
+}
+.footul3:first-child{
+  line-height: 2;
+}
+.footul5 li {
+  padding: 5px;
+}
+.foo
 .float {
   float: right;
 }

@@ -1,27 +1,27 @@
 /* layer popup */
-#layer{
+#layer {
   display: block;
   position: fixed;
-  width:500px;
+  width: 500px;
   height: 500px;
   background: #ccc;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
-  z-index:90999099090;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  z-index: 90999099090;
   font-size: 2.4em;
-  padding:3em;
+  padding: 3em;
   box-sizing: border-box;
   line-height: 2;
-  top:50px;
-  left:150px;
+  top: 50px;
+  left: 150px;
 }
-#layer button{
+#layer button {
   position: absolute;
   cursor: pointer;
-  padding:10px 20px;
-  right:0;
-  top:0;
+  padding: 10px 20px;
+  right: 0;
+  top: 0;
   background-color: #222;
-  color:#fff;
+  color: #fff;
 }
 li {
   list-style: none;
@@ -60,13 +60,11 @@ a:focus {
   background: rgb(252, 252, 252);
   color: rgb(255, 0, 0);
 }
-header{
-  background-image: url(../images/mainimage1.jpg);
-}
+
 header .ex .dep0 {
   width: 100%;
   max-width: 1280px;
-  
+  margin: auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -76,7 +74,6 @@ header .ex .dep0 li {
 header .ex .dep0 li input {
   width: 175px;
   height: 24px;
-  color:rgb(231, 46, 46);
   background-color: rgba(255, 255, 255, 0);
   border: none;
   border-bottom: 1px solid rgb(255, 255, 255);
@@ -89,7 +86,6 @@ header .ex .dep0 li a {
 }
 
 header nav {
-  position: relative;
   width: 100%;
   height: 50px;
   margin-top: 41px;
@@ -129,7 +125,6 @@ header nav .dep1 .list1 h2 a:before {
   width: 0%;
   height: 4px;
   background: #1634db;
-  position: relative;
   top: 42px;
 }
 header nav .dep1 .list1 h2 a:hover:before {
@@ -175,13 +170,10 @@ section h3 {
   color: gray;
 }
 
-#main_slide .slide_cover .slide_cover_blah {
-  top: 50vh;
-}
 #main_slide .slide_cover .slide_cover_blah .say1 {
   position: absolute;
-  top: -50px;
-  right: 50px;
+  top: 50vh;
+  left: 0px;
   font-size: 30px;
   color: white;
   font-weight: 400;
@@ -189,21 +181,20 @@ section h3 {
 }
 #main_slide .slide_cover .slide_cover_blah .say2 {
   position: absolute;
-  top: 0px;
-  right: 50px;
+  top: 55vh;
+  left: 0px;
   font-size: 40px;
   color: white;
   font-weight: 600;
   text-shadow: 4px 5px 5px rgb(134, 134, 134);
 }
-#main_slide .slide_cover a img {
-  width: 100%;
-  top: 80vh;
-}
 #main_slide .slide_cover .mainfunc {
   position: absolute;
-  top: 30vh;
-  left: -2vw;
+  top: 85vh;
+  left: 0px;
+}
+#main_slide .slide_cover a img {
+  width: 100%;
 }
 #main_slide .slide_cover .mainfunc {
   display: flex;
@@ -356,7 +347,10 @@ section h3 {
   font-size: 14px;
   line-height: 3;
 }
-.info2-1 li span{
+.info2-1 li {
+  width: 60px;
+  height: 20px;
+  margin: 20px;
   border-radius: 10px;
   background-color: #ecfafb;
 }
@@ -368,7 +362,7 @@ section h3 {
 }
 
 .wrap2 {
-  left: 69%;
+  left: 68%;
   top: 0;
   width: 32%;
   height: 300px;
@@ -474,7 +468,6 @@ section h3 {
   margin-top: 15px;
 }
 .flexbox1 {
-  position: relative;
   border: none;
   width: 414px;
   height: 200px;
@@ -634,8 +627,8 @@ section h3 {
   top: -260px;
   background: #313849;
 }
-.footer_inner1 .footul li:nth-child(3){
-  color:#b0b8e0
+.footer_inner1 .footul li:nth-child(3) {
+  color: #b0b8e0;
 }
 .footer_inner2 {
   width: 100%;
@@ -658,56 +651,48 @@ section h3 {
   justify-content: space-between;
   margin-top: 30px;
 }
-.float{
-  float: right;
-}
 .footul2,
 .footul3 {
   color: rgb(138, 138, 138);
   font-size: 15px;
 }
-.footul2{
+.footul2 {
   position: absolute;
-  right:710px;
+  right: 710px;
   line-height: 2.5;
 }
-.footul3{
+.footul3 {
   position: absolute;
-  left:650px;
+  left: 650px;
 }
-.footul3 li a span {
-  color:rgb(182, 182, 182);
-  font-weight: 100;
-
-}
-.footul3 li:first-child{
-  color:rgb(182, 182, 182);
-  font-size: 16px;
+.footul3 li:first-child {
+  color: rgb(182, 182, 182);
+  font-size: 15px;
   font-weight: bold;
 }
-.footul3 li span{
-  margin-left: 10px;
+.footul3 li a span {
+  color: rgb(182, 182, 182);
+  font-size: 22px;
+  font-weight: 100;
 }
-.footul3:first-child{
+.footul3:first-child {
   line-height: 2;
-}
-.footul4 li span a i{
-  width:30px;
-  height: 30px;
- 
-  background-color: white;
-}
-.footul5{
-  position:absolute;
-  top:55px;
-  right:-11px;
 }
 .footul5 li {
   padding: 5px;
 }
-.foo
 .float {
+  position: absolute;
   float: right;
+  top: 0;
+  right: 0;
+}
+.float select {
+  border: 1px solid gray;
+  background-color: #ffffff00;
+  padding: 7px;
+  color: gray;
+  font-weight: 700;
 }
 #third_slide {
   background-color: #ebf0f5;
@@ -727,8 +712,6 @@ section h3 {
   height: 50px;
   line-height: 50px;
 }
-form{
-  position: absolute;
-  top:0;
-  right:0;
+.footul4 {
+  justify-content: flex-end;
 }

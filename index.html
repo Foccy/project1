@@ -25,6 +25,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/pj1.css" />
+    <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div id="layer">
@@ -41,8 +43,8 @@
       <li><a href="#fourth_slide">Service</a></li>
     </ul>
     <header class="pr w100">
-      <div class="headerabsolute pa w100">
-        <div class="ex pr">
+      <div class="header_cover pa w100">
+        <nav class="header_top pr">
           <ul class="dep0">
             <li>
               <input type="text" placeholder="검색어를 입력하세요" /><span
@@ -62,10 +64,10 @@
               >
             </li>
           </ul>
-        </div>
-        <nav class="pr">
+        </nav>
+        <nav class="header_bottom pr">
           <ul class="dep1">
-            <li class="list0">
+            <li class="dep1_1">
               <a href="#"
                 ><img src="./images/gunbosim.png" alt="건강보험심사평가원메뉴"
               /></a>
@@ -73,7 +75,7 @@
                 <li><img src="./images/lnb_bg.png" alt="" /></li>
               </ul>
             </li>
-            <li class="list1">
+            <li class="dep1_2">
               <h2><a href="#">의료정보</a></h2>
               <ul class="dep2">
                 <li><a href="#">의료평가정보</a></li>
@@ -86,7 +88,7 @@
                 <li><a href="#">호흡기환자진료센터(원스톱진료기관) 정보</a></li>
               </ul>
             </li>
-            <li class="list1">
+            <li class="dep1_2">
               <h2><a href="#">조회.신청</a></h2>
               <ul class="dep2">
                 <li><a href="#">내가 먹는 약! 한눈에</a></li>
@@ -98,7 +100,7 @@
                 <li><a href="#">7개질병군(DRG) 진료비 확인</a></li>
               </ul>
             </li>
-            <li class="list1">
+            <li class="dep1_2">
               <h2><a href="#">제도.정책</a></h2>
               <ul class="dep2">
                 <li><a href="#">보험인정기준</a></li>
@@ -111,7 +113,7 @@
                 <li><a href="#">웹툰으로 이해하는 제도</a></li>
               </ul>
             </li>
-            <li class="list1">
+            <li class="dep1_2">
               <h2><a href="#">국민소통</a></h2>
               <ul class="dep2">
                 <li><a href="#">고객의 소리</a></li>
@@ -124,7 +126,7 @@
                 <li><a href="#">ICT 소통채널</a></li>
               </ul>
             </li>
-            <li class="list1">
+            <li class="dep1_2">
               <h2><a href="#">기관소식</a></h2>
               <ul class="dep2">
                 <li><a href="#">심평원 소개</a></li>
@@ -137,7 +139,7 @@
                 <li><a href="#">공공자원 개방안내 및 신청</a></li>
               </ul>
             </li>
-            <li class="list2">
+            <li class="dep1_3">
               <a href="#"><img src="./images/allmenu_open.png" alt="" /></a>
             </li>
           </ul>
@@ -145,8 +147,8 @@
       </div>
     </header>
     <section id="main_slide">
-      <div class="slide_cover">
-        <div class="slide_cover_blah pr w1280">
+      <div class="main_slide_cover">
+        <div class="main_slide_cover_blah pr w1280">
           <p class="say1">SMART HIRA, BETTER HEALTH</p>
           <p class="say2">건강보험심사평가원</p>
           <ul class="mainfunc">
@@ -628,7 +630,7 @@
             <li>원격지원</li>
             <li>인증센터</li>
           </ul>
-          <ul class="float">
+          <div class="float">
             <form action="pa">
               <fieldset class="selectbox">
                 <legend class="blind"></legend>
@@ -650,7 +652,7 @@
                 </select>
               </fieldset>
             </form>
-          </ul>
+          </div>
         </div>
       </div>
       <div class="footer_inner2 pa">
@@ -725,6 +727,5 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
   </body>
 </html>

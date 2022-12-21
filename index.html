@@ -25,7 +25,8 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/pj1.css" />
-    <script src='https://code.jquery.com/jquery-1.12.1.min.js'></script>
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -44,10 +45,10 @@
     </ul>
     <header class="pr w100">
       <div class="header_cover pa w100">
-        <nav class="header_top pr">
-          <ul class="dep0">
+        <nav class="header_top pr w1280">
+          <ul class="dep0 pa">
             <li>
-              <input type="text" placeholder="검색어를 입력하세요" /><span
+              <input type="search" placeholder="검색어를 입력하세요" /><span
                 class="material-symbols-outlined"
               >
                 search
@@ -59,6 +60,13 @@
             <li>
               <a href="#"
                 >Global<span class="material-symbols-outlined">
+                  expand_more
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                >팝업열기<span class="material-symbols-outlined">
                   expand_more
                 </span></a
               >
@@ -147,10 +155,12 @@
       </div>
     </header>
     <section id="main_slide">
-      <div class="main_slide_cover">
-        <div class="main_slide_cover_blah pr w1280">
-          <p class="say1">SMART HIRA, BETTER HEALTH</p>
-          <p class="say2">건강보험심사평가원</p>
+      <div class="main_slide_cover w100">
+        <div class="main_slide_cover_blah w1280">
+          <div class="slogan">
+            <span class="top">SMART HIRA, BETTER HEALTH</span
+            ><span class="bottom">건강보험심사평가원</span>
+          </div>
           <ul class="mainfunc">
             <li>
               <a href="#"
@@ -201,9 +211,6 @@
             </li>
           </ul>
         </div>
-        <a href="">
-          <img src="images/mainimage1.jpg" alt="메인배너1th" />
-        </a>
       </div>
     </section>
     <section id="second_slide" class="w100">
@@ -664,7 +671,8 @@
             <li>
               <ul class="footul2">
                 <li>
-                  (우) 26465, 강원도 원주시 혁신로 60(반곡동) 건강보험심사평가원
+                  (우) 264115, 경기도 수원시 혁성로 62(반노동)
+                  건강보험심사평가원
                 </li>
                 <li>
                   COPYRIGHT ⓒ 2022 by HEALTH INSURANCE REVIEW & <br />
@@ -676,7 +684,7 @@
               <ul class="footul3">
                 <li>
                   <span>고객센터 ARS안내</span>
-                  <a href="tel:1644-2000"><span>1644-2000</span></a>
+                  <a href="tel:1644-2000"><span>1644-2222</span></a>
                 </li>
                 <li>고객센터상담: 09:00 ~ 18:00 (평일)</li>
                 <li>기타 조회서비스 및 상담예약: 연중무휴 24시간 운영</li>

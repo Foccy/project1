@@ -4,7 +4,7 @@
 
 ## tips and add
 
-    <ul>
+<ul>
         <li>
             자주쓰는 옵션(position display) reset.css와 함께 추가 해두고 class로 쓰도록 하자 border font)
         </li>

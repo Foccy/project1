@@ -292,6 +292,7 @@ section h3 {
   border: #5266cf solid 1px;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
 }
 
 #main_slide .mainfunc li a span {
@@ -305,42 +306,31 @@ section h3 {
   align-items: flex-end;
   list-style: none;
 }
-.menu1 .menu1-1 a img {
-  width: 50px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.menu1 .menu1-2 a img {
-  width: 50px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.menu1 .menu1-3 a img {
-  width: 50px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.menu1 .menu1-4 a img {
-  width: 0px;
-  height: 64px;
-  margin-bottom: 10px;
-}
-.menu1 li {
+
+.menu1 li a {
   background-color: white;
   border: 0.1px solid rgb(187, 187, 187);
   width: 270px;
   height: 120px;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
   padding: 24px;
-  margin: 0px;
   text-align: center;
-  font-weight: bold;
+}
+.menu1 li a:hover {
+  color: white;
+  background-color: #5266cf;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
 }
 
-.menu1 li img {
-  height: 64px;
-  margin-bottom: 10px;
+.menu1 li a i {
+  display: block;
+  text-align: center;
+  font-size: 65px;
+  padding-bottom: 15px;
 }
-
 .menu2 {
   display: flex;
   justify-content: space-between;
@@ -376,34 +366,23 @@ section h3 {
 .p2 {
   font-size: 13px;
 }
-
-.wrap_card1,
-.wrap_card2,
-.wrap_card3,
-.wrap_card4 {
+.wrap_card {
   top: 200px;
-  border: 0.1px solid rgb(187, 187, 187);
+  border: 0.1px solid#d5d8d9;
   background-color: white;
   overflow: hidden;
 }
-
+.wrap_card:hover {
+  border: 0.1px solid #5b88ff;
+  box-shadow: 10px 10px 10px #545860;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  transform: scale(1.05);
+}
 .p {
   padding: 20px;
   display: flex;
 }
-
-.wrap_card2 {
-  left: 330px;
-}
-
-.wrap_card3 {
-  left: 660px;
-}
-
-.wrap_card4 {
-  left: 984px;
-}
-
 .p1 {
   color: #5c6f92;
   background-color: #e8f0fe;

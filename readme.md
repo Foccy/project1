@@ -19,4 +19,7 @@
     <li>
     commit.mainfuc 아이콘, a안텍스트가 함께 rotate 되는 문제> 아이콘만 혼자 돌아야함. hover시 떨림 문제
     </li>
+    <li>
+        같은 문제로, .wrap_card 안의 이미지만 transition scale을 먹어야하는데 함께 움직이는 문제
+    </li>
 </ul>

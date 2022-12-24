@@ -52,17 +52,10 @@ body a {
   top: 50%;
 }
 
-a:focus {
-  outline: 4px dashed rgb(17, 0, 255);
-  background: rgb(252, 252, 252);
-  color: rgb(255, 0, 0);
-}
-
 header {
   z-index: 999999;
 }
-.header_cover {
-}
+
 header .header_top {
   height: 70px;
   line-height: 70px;
@@ -81,6 +74,9 @@ header .header_top .dep0 li {
   padding: 5px;
   color: white;
   flex-basis: 100px;
+}
+header .header_top .dep0 li a:hover {
+  text-decoration: underline 1px rgb(255, 255, 255);
 }
 header .header_top .dep0 li.search_bar {
   position: relative;
@@ -263,8 +259,6 @@ section h3 {
   font-size: 44px;
   font-weight: 900;
 }
-#main_slide .slogan > span .header_bottom {
-}
 
 #main_slide .mainfunc {
   display: flex;
@@ -274,7 +268,7 @@ section h3 {
   z-index: 9999;
 }
 
-#main_slide .mainfunc li {
+#main_slide .mainfunc li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -284,19 +278,27 @@ section h3 {
   text-align: center;
   font-weight: bold;
   box-shadow: 2px 2px 2px rgb(143, 143, 143);
+  font-size: 14px;
+  display: block;
+  line-height: 1.2;
 }
-
-#main_slide .mainfunc li a img {
-  width: 40px;
-  height: 40px;
-  padding: 20px 0 0 0;
+.mainfunc li a i {
+  font-size: 40px;
+  padding: 15px;
+  display: block;
+}
+#main_slide .mainfunc li a:hover {
+  color: blue;
+  border: #5266cf solid 1px;
+  transform: rotateY(360deg);
+  transition-duration: 0.7s;
 }
 
 #main_slide .mainfunc li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;
-} /* */
+}
 
 .menu1 {
   display: flex;
@@ -342,7 +344,7 @@ section h3 {
 .menu2 {
   display: flex;
   justify-content: space-between;
-  margin-top:20px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -431,7 +433,7 @@ section h3 {
 }
 
 .wrap0 .wrap1 {
-  margin-right:20px;
+  margin-right: 20px;
   padding: 30px;
   background-color: white;
 }
@@ -571,20 +573,18 @@ section h3 {
   border-bottom: 3px solid rgb(168, 168, 168);
   padding: 10px 0px;
 }
-.wrap3-1-3 li a{
-  
-}
-.wrap3-1-3 li a i{
-  color:white;
+
+.wrap3-1-3 li a i {
+  color: white;
   text-align: center;
   font-size: 18px;
   line-height: 25px;
-  width:30px;
+  width: 30px;
   height: 30px;
-  border:none;
+  border: none;
   border-radius: 100%;
   background-color: gray;
-  margin-right:8px;
+  margin-right: 8px;
 }
 .wrap3-1-3 li:nth-child(4) {
   border-bottom: none;
@@ -631,9 +631,9 @@ section h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-right:50px;
+  padding-right: 50px;
 }
-.wrap3-0-1{
+.wrap3-0-1 {
   margin-right: 50px;
 }
 .wrap3-2 ul li h5 {
@@ -673,9 +673,9 @@ section h3 {
 }
 
 .jack1::before {
-  position:absolute;
-  top:28px;
-  right:20px;
+  position: absolute;
+  top: 28px;
+  right: 20px;
   content: "";
   background-image: url(../images/intro_bg2.png);
   width: 146px;
@@ -776,10 +776,10 @@ section h3 {
   height: 80px;
   line-height: 1;
   margin: 15px;
-  margin-top:30px;
+  margin-top: 30px;
 }
-.jack2 li a img{
-  margin:21px 25px;
+.jack2 li a img {
+  margin: 21px 25px;
 }
 
 .jack2 li a span {
@@ -836,7 +836,7 @@ section h3 {
   top: -260px;
   background: #313849;
 }
-.footer_inner1-1{
+.footer_inner1-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -857,7 +857,7 @@ section h3 {
   margin-top: 0px;
   font-size: 15px;
   color: gray;
-  padding:18px;
+  padding: 18px;
 }
 
 .footul li {
@@ -882,7 +882,7 @@ section h3 {
   right: 710px;
   line-height: 2.5;
 }
-.footul2 li:nth-child(2){
+.footul2 li:nth-child(2) {
   line-height: 1.5;
 }
 
@@ -906,7 +906,7 @@ section h3 {
 .footul3:first-child {
   line-height: 2;
 }
-.footul3 li:nth-child(3){
+.footul3 li:nth-child(3) {
   line-height: 1.2;
 }
 .footul5 li {
@@ -956,15 +956,15 @@ section h3 {
   background: #afb9cf;
   border-radius: 100%;
 }
-.footul4 li a i{
-  color:#d7d8da;
+.footul4 li a i {
+  color: #d7d8da;
   text-align: center;
   font-size: 18px;
   line-height: 25px;
-  width:30px;
+  width: 30px;
   height: 30px;
-  border:none;
+  border: none;
   border-radius: 100%;
   background-color: #383c45;
-  margin-right:8px;
+  margin-right: 8px;
 }

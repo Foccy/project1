@@ -51,6 +51,9 @@ body a {
   z-index: 9999999999;
   top: 50%;
 }
+header .header_top_hidden {
+  display: none;
+}
 
 header {
   z-index: 999999;
@@ -126,18 +129,41 @@ header .header_top .dep0 li a span {
 }
 
 header .header_bottom {
+  display: block;
   width: 100%;
-  height: 50px;
-  background: rgba(255, 255, 255, 0);
+  height: 64px;
   overflow: hidden;
 }
-
-header .header_bottom:hover {
-  background-color: rgb(255, 255, 255);
+header .header_bottom_wrap {
+  height: 65px;
+  width: 100%;
+  background-color: transparent;
+}
+.dep1_0 {
+  display: flex;
+  justify-content: space-between;
+}
+.dep1_0 i,
+h2 a {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: left;
+  letter-spacing: -1.1px;
+  vertical-align: center;
+  color: white;
+}
+header .header_bottom_2 {
+  display: block;
+  background-color: #ffffff;
+}
+header .header_bottom {
+  display: block;
   height: 488px;
   z-index: 999;
 }
-
+.dep1_0 h2 a:hover > .header_bottom_2 {
+  display: block;
+}
 header .header_bottom .dep1 {
   width: 100%;
   max-width: 1280px;
@@ -145,14 +171,18 @@ header .header_bottom .dep1 {
   display: flex;
   justify-content: space-between;
 }
-
+header .header_bottom .dep1_1,
+.dep1_2,
+.dep1_3 {
+  height: 403px;
+}
 header .header_bottom .dep1 .dep1_1 a img {
   margin-right: 130px;
   margin-top: 6px;
 }
 
 header .header_bottom .dep1 .dep1_1 .dep2 li img {
-  margin-right: 100px;
+  margin-right: 47px;
   margin-top: 70px;
 }
 
@@ -161,20 +191,6 @@ header .header_bottom .dep1 .dep1_2 {
   flex-direction: column;
   width: 180px;
   padding: 10px 10px 10px 18px;
-}
-
-header .header_bottom .dep1 .dep1_2 h2 a:before {
-  content: "";
-  display: block;
-  width: 0%;
-  height: 4px;
-  background: #1634db;
-}
-
-header .header_bottom .dep1 .dep1_2 h2 a:hover:before {
-  width: 100px;
-  position: absolute;
-  top: 60px;
 }
 
 header .header_bottom .dep1 .dep1_2 h2 a {
@@ -194,13 +210,8 @@ header .header_bottom .dep1 .dep1_2 .dep2 li a {
   font-size: 17px;
   color: rgb(46, 46, 46);
   text-align: left;
-  line-height: 2.7;
+  line-height: 2.2;
 }
-
-header .header_bottom .dep1 .dep2:hover {
-  background-color: gray;
-}
-
 header .header_bottom .dep1 .dep1_2 .dep2 li a:hover {
   color: rgb(113, 113, 248);
 }

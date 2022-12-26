@@ -23,3 +23,11 @@
         같은 문제로, .wrap_card 안의 이미지만 transition scale을 먹어야하는데 함께 움직이는 문제
     </li>
 </ul>
+
+### hover complete
+
+<ul>
+    <li>
+        2슬라이드 
+    </li>
+</ul>

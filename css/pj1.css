@@ -6,7 +6,7 @@
   height: 500px;
   background: #ccc;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
-  z-index: 9099909909099999999999999999999999;
+  z-index: 90999099999;
   font-size: 2.4em;
   padding: 3em;
   box-sizing: border-box;
@@ -153,7 +153,7 @@ h2 a {
   color: white;
 }
 header .header_bottom_2 {
-  display: block;
+  display: none;
   background-color: #ffffff;
 }
 header .header_bottom {
@@ -161,9 +161,7 @@ header .header_bottom {
   height: 488px;
   z-index: 999;
 }
-.dep1_0 h2 a:hover > .header_bottom_2 {
-  display: block;
-}
+
 header .header_bottom .dep1 {
   width: 100%;
   max-width: 1280px;
@@ -245,8 +243,13 @@ section h3 {
   width: 100%;
 }
 #main_slide .main_slide_img img {
+  position: absolute;
   width: 100%;
 }
+#main_slide .main_slide_img li .on {
+  z-index: 99999999;
+}
+
 #main_slide .w1280 {
   width: 100%;
   height: 100%;

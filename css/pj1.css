@@ -151,6 +151,7 @@ h2 a {
   letter-spacing: -1.1px;
   vertical-align: center;
   color: white;
+  padding-bottom: 65px;
 }
 header .header_bottom_2 {
   display: none;
@@ -170,8 +171,7 @@ header .header_bottom .dep1 {
   justify-content: space-between;
 }
 header .header_bottom .dep1_1,
-.dep1_2,
-.dep1_3 {
+.dep1_2 {
   height: 403px;
 }
 header .header_bottom .dep1 .dep1_1 a img {
@@ -204,7 +204,8 @@ header .header_bottom .dep1 .dep1_2 .dep2 li {
   text-align: left;
 }
 
-header .header_bottom .dep1 .dep1_2 .dep2 li a {
+header .header_bottom .dep1 .dep1_2 .dep2 li a,
+i {
   font-size: 17px;
   color: rgb(46, 46, 46);
   text-align: left;
@@ -213,14 +214,6 @@ header .header_bottom .dep1 .dep1_2 .dep2 li a {
 header .header_bottom .dep1 .dep1_2 .dep2 li a:hover {
   color: rgb(113, 113, 248);
 }
-
-header .header_bottom .dep1 .dep1_3 a img {
-  margin-top: 12px;
-  width: 30px;
-  height: 30px;
-  color: white;
-}
-
 section h2 {
   text-align: center;
   font-size: 50px;
@@ -247,7 +240,7 @@ section h3 {
   width: 100%;
 }
 #main_slide .main_slide_img li .on {
-  z-index: 99999999;
+  z-index: -99999999;
 }
 
 #main_slide .w1280 {
@@ -300,6 +293,7 @@ section h3 {
   font-size: 40px;
   padding: 15px;
   display: block;
+  text-align: center;
 }
 #main_slide .mainfunc li a:hover {
   color: blue;

@@ -78,21 +78,47 @@ $(".dep1_0_5, .script5")
   });
 
 // -----------------------------------
-var i = 0,
-  k = null,
-  repeat;
-timer();
-function timer() {
-  setInterval(function () {
-    i++;
-    k = i - 1;
-    if (i == 3) {
-      i = 0;
-    }
-    slide();
-  }, 5000);
-}
-function slide() {
-  $(".main_slide_img li img").eq(i).addClass("on");
-  $(".main_slide_img li img").eq(k).removeClass("on");
-}
+  //  --- 슬라이드 그냥 변경 스크립트
+
+// var i = 0,
+//   k = null,
+//   repeat;
+// timer();
+// function timer() {
+//   setInterval(function () {
+//     i++;
+//     k = i - 1;
+//     if (i == 3) {
+//       i = 0;
+//     }
+//     slide();
+//   }, 5000);
+// }
+// function slide() {
+//   $(".main_slide_img li img").eq(i).addClass("on");
+//   $(".main_slide_img li img").eq(k).removeClass("on");
+// }
+
+//-------------------------
+
+$(function(){
+  const mainIMG = $(".main_slide_img");
+  const mainIMG1 =$(".main_slide_img>img1");
+  const mainIMG2 =$(".main_slide_img>img2");
+  const mainIMG3 =$(".main_slide_img>img3");
+  let current = 0;
+  
+  timer();
+  function timer(){
+    setInterval(function(){
+      let next = current +1;
+      move(next);
+    },4000)
+  }
+  function move(next){
+    let cu = mainIMG.eq(current);
+  let me =mainIMG.eq(next)
+    cu.css("left","0").stop().animate({left:"-100%"});
+  me.stop().animate({left:"0%"})
+  }
+})

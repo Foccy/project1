@@ -77,6 +77,24 @@ $(".dep1_0_5, .script5")
     $(".script5").css("background", "white");
   });
 
+let num = 1;
+function nextGallery() {
+  //위에서아래로
+  num++;
+  if (num >= 7) {
+    num = 1;
+  }
+  document.getElementById("gallery").src = "images/img" + num + ".jpg";
+  return false;
+}
+function prevGallery() {
+  num--;
+  if (num <= 0) {
+    num = 7;
+  }
+  document.getElementById("gallery").src = "images/img" + num + ".jpg";
+  return false;
+}
 // -----------------------------------
 //  --- 슬라이드 그냥 변경 스크립트
 

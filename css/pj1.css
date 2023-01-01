@@ -73,10 +73,18 @@ header .header_top .dep0 {
   align-content: center;
 }
 
-header .header_top .dep0 li {
-  padding: 5px;
+header .header_top .dep0 li a {
+  padding: 0px;
   color: white;
   flex-basis: 100px;
+}
+.dep0_1_1 {
+  width: 88px;
+  height: 100px;
+  border: gray 1px solid;
+}
+.dep0_1_1 li a {
+  padding: 0px;
 }
 header .header_top .dep0 li a:hover {
   text-decoration: underline 1px rgb(255, 255, 255);
@@ -231,25 +239,25 @@ section h3 {
 #main_slide {
   height: 100vh;
 }
-#main_slide .main_slide_img {
+#main_slide #main_slide_img {
   top: 0;
   width: 100%;
 }
-#main_slide .main_slide_img img {
+#main_slide #main_slide_img img {
   position: absolute;
   width: 100%;
 }
-#main_slide .main_slide_img li .on {
+#main_slide #main_slide_img li .on {
   z-index: -99999999;
 }
-#main_slide .main_slide_img li .img1{
-  left:0%;
+#main_slide #main_slide_img li .img1 {
+  left: 0%;
 }
-#main_slide .main_slide_img li .img2{
-  left:100%;
+#main_slide #main_slide_img li .img2 {
+  left: 100%;
 }
-#main_slide .main_slide_img li .img3{
-  left:200%;
+#main_slide #main_slide_img li .img3 {
+  left: 200%;
 }
 
 #main_slide .w1280 {
@@ -262,33 +270,31 @@ section h3 {
   transform: translateY(-50%);
   z-index: 9999;
 }
-#main_slide .playbox{
+#main_slide .playbox {
   left: 0%;
   top: 65%;
   transform: translateY(-50%);
   z-index: 999999999999999999999999;
 }
-#main_slide .playbox1{
+#main_slide #playbox1 {
   display: flex;
 }
-#main_slide .playbox1 .playbox1_1 {
-  width: 51px;
-  height: 2px;
-  border: 1px solid white;
-  background-color: #ffffff00;
-  margin-right: 4px;
+#main_slide playbox1_1 a img {
+  width: 50px;
+  height: 5px;
+  padding: 0px 3px;
 }
-#main_slide .playbox1_2 a i{
+#main_slide .playbox1_2 a i {
   width: 30px;
   height: 25px;
   border-radius: 50%;
   text-align: center;
   font-size: 17px;
-  padding-top:6px;
+  padding-top: 6px;
   background-color: white;
-  margin-left:10px;
-  position:absolute;
-  bottom:-5px;
+  margin-left: 10px;
+  position: absolute;
+  bottom: -5px;
 }
 #main_slide .slogan > span {
   color: white;

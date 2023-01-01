@@ -78,7 +78,7 @@ $(".dep1_0_5, .script5")
   });
 
 // -----------------------------------
-  //  --- 슬라이드 그냥 변경 스크립트
+//  --- 슬라이드 그냥 변경 스크립트
 
 // var i = 0,
 //   k = null,
@@ -101,24 +101,49 @@ $(".dep1_0_5, .script5")
 
 //-------------------------
 
-$(function(){
-  const mainIMG = $(".main_slide_img");
-  const mainIMG1 =$(".main_slide_img>img1");
-  const mainIMG2 =$(".main_slide_img>img2");
-  const mainIMG3 =$(".main_slide_img>img3");
+$(function () {
+  const mainIMG = $("#main_slide_img");
+  const play = $("#playbox1");
   let current = 0;
-  
+  let btnIdx = 0;
+  let id;
+
+  play.click(function () {
+    btnIdx = $(this).index();
+    console.log(btnIdx);
+    play.removeClass("on");
+    $(this).addClass("on");
+    move();
+  });
+
   timer();
-  function timer(){
-    setInterval(function(){
-      let next = current +1;
+  function timer() {
+    id = setInterval(function () {
+      let next = current + 1;
+      // if (next == mainIMG.length) {
+      //   next = 0;
+      // }
+      console.log(next);
       move(next);
-    },4000)
+    }, 4000);
   }
-  function move(next){
+  function move(next) {
     let cu = mainIMG.eq(current);
-  let me =mainIMG.eq(next)
-    cu.css("left","0").stop().animate({left:"-100%"});
-  me.stop().animate({left:"0%"})
+    let me = mainIMG.eq(next);
+    cu.css("left", "0").stop().animate({ left: "-100%" });
+    me.stop().animate({ left: "0%" });
   }
-})
+
+  clearAuto();
+  function clearAuto() {
+    $(".main_slide_img,.playbox1,.controls").mouseenter(function () {
+      clearInterval(id);
+    });
+
+    $(".main_slide_img,.playbox1,.controls").mouseleave(function () {
+      timer();
+    });
+  }
+});
+
+// next에서 숫자가 올라가지를 않음. length 배열

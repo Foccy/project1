@@ -72,19 +72,32 @@ header .header_top .dep0 {
   justify-content: flex-end;
   align-content: center;
 }
-
-header .header_top .dep0 li a {
+.dep0_1 button , i{
+  color:white;
+  background-color: #ffffff00;
+}
+.dep0
+header .header_top .dep0 .dep0_2 {
   padding: 0px;
   color: white;
   flex-basis: 100px;
 }
 .dep0_1_1 {
-  width: 88px;
-  height: 100px;
-  border: gray 1px solid;
+  position: absolute;
+    top: 48px;
+    width: 80px;
+    height: 102px;
+    border: #acacac 1px solid;
+    background: white;
+    border-radius: 10px;
 }
-.dep0_1_1 li a {
+.dep0_1_1 li  {
   padding: 0px;
+  line-height: 40px;
+  color:black
+}
+.dep0_1_1 li a{
+  color:black;
 }
 header .header_top .dep0 li a:hover {
   text-decoration: underline 1px rgb(255, 255, 255);
@@ -222,7 +235,9 @@ i {
 header .header_bottom .dep1 .dep1_2 .dep2 li a:hover {
   color: rgb(113, 113, 248);
 }
+
 section h2 {
+  margin-top: 800px;
   text-align: center;
   font-size: 50px;
   font-weight: 1000;
@@ -311,6 +326,7 @@ section h3 {
 }
 
 #main_slide .mainfunc {
+  width:100%;
   display: flex;
   left: 0%;
   top: calc(65% + 150px);
@@ -340,7 +356,12 @@ section h3 {
 }
 #main_slide .mainfunc li a:hover {
   color: blue;
-  border: #5266cf solid 1px;
+  outline: #5266cf solid 2px;
+outline-offset: -2px;
+  transform: scale(0.97);
+}
+#main_slide .mainfunc li a:hover>i{
+  color:#5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
@@ -360,7 +381,7 @@ section h3 {
 
 .menu1 li a {
   background-color: white;
-  border: 0.1px solid rgb(187, 187, 187);
+  border: 1px solid rgb(187, 187, 187);
   width: 270px;
   height: 120px;
   display: inline-block;
@@ -372,10 +393,15 @@ section h3 {
 .menu1 li a:hover {
   color: white;
   background-color: #5266cf;
-  transition-timing-function: ease-in-out;
+  transition-timing-function:ease;
   transition-duration: 0.25s;
 }
+.menu1 li a:hover>i{
+  color: white;
+  transform: translateY(-7px);
+  transition-duration: 0.4s;
 
+}
 .menu1 li a i {
   display: block;
   text-align: center;
@@ -387,6 +413,10 @@ section h3 {
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 50px;
+}
+.menu1  li  a.active{
+  color: white;
+  background-color: #5266cf;
 }
 
 .menu2 li {
@@ -423,17 +453,21 @@ section h3 {
   background-color: white;
   overflow: hidden;
 }
+
 .wrap_card:hover {
   border: 0.1px solid #5b88ff;
   box-shadow: 10px 10px 10px #545860;
   transition-timing-function: linear;
-  transition-duration: 0.2s;
+  transition-duration: 0.3s;
+}
+.wrap_card:hover > .card{
+  overflow: hidden;
 }
 .wrap_card:hover > .card img {
   transform: scale(1.1);
   transition-duration: 0.2s;
   overflow: hidden;
-  max-height: 230px;
+  max-height: 270px;
 }
 .p {
   padding: 20px;
@@ -647,7 +681,7 @@ section h3 {
   color: white;
   text-align: center;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 30px;
   width: 30px;
   height: 30px;
   border: none;
@@ -721,7 +755,7 @@ section h3 {
 }
 .wrap3-2 ul li h5 {
   font-size: 14px;
-  letter-spacing: -1;
+  letter-spacing: 0;
   line-height: 3;
   color: gray;
 }
@@ -865,7 +899,7 @@ section h3 {
   height: 80px;
   line-height: 1;
   margin: 15px;
-  margin-top: 30px;
+  margin-top: 35px;
 }
 .jack li a:hover {
   background-color: #5b88ff;
@@ -1015,7 +1049,12 @@ section h3 {
   line-height: 1.2;
 }
 .footul5 li {
+  display: flex;
   padding: 5px;
+}
+.footul5 li img{
+  width: 60px;
+  height: 40px;
 }
 .float select {
   font-size: 15px;

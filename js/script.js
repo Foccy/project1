@@ -1,3 +1,4 @@
+//--------------------------------------------------layer popup
 document.addEventListener("DOMContentLoaded", function () {
   document
     .querySelector("#layer button")
@@ -5,31 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector("#layer").style.display = "none";
     });
 });
-// $(function () {
-//   $(".dep1_0>li>h2>a .header_bottom_2").mouseover(function () {
-//     $(".header_bottom_2").stop().slideDown(600);
-//   });
-//   $(".dep1_2>h2 .dep2").mouseleave(function () {
-//     $(".dep1_2>h2").stop().slideUp(600);
-//   });
 
-//   var i = $(this).index();
-//   $(".dep1_2").mouseover(function () {});
-// });
-
-// $('.dep1_0 li').mouseover(function(){
-//   $(".header_bottom_2").stop().slideDown(600);
-// });
-
-// $('.dep1_0 li').mouseout(function(){
-//   $(".header_bottom_2").stop().slideUp(600);
-// });
-
-// $('.dep1_0 li').mouseover(function(){
-//   $(".header_bottom_2").stop().slideDown(600);
-// }).mouseout(function(){
-//   $(".header_bottom_2").stop().slideUp(600);
-// });
+//--------------------------------------------------first slide
 
 $(".dep1_0 li, .header_bottom_2")
   .mouseover(function () {
@@ -39,7 +17,8 @@ $(".dep1_0 li, .header_bottom_2")
   .mouseout(function () {
     $(".header_bottom_2").stop().slideUp(0);
   });
-//------------------------------------------------------
+
+//++++++++++++++++++++
 
 $(".dep1_0_1, .script1")
   .mouseover(function () {
@@ -76,9 +55,28 @@ $(".dep1_0_5, .script5")
   .mouseout(function () {
     $(".script5").css("background", "white");
   });
+//---------------------------second tab-------------------------------------//
+
+// var tabmenu1 = $(".menu1 li a")
+// var panels1 = $(".menu2")
+// tabmenu1.eq(0).addClass("active")
+// panels.eq(0).show()
+
+// tabmenu1.click(function(s){
+//   s.preventDefault()
+//   let click=$(this)
+//   let currentlink = click.attr("href")
+//   tabmenu1.removeClass("active")
+//   click.addClass("active")
+//   panels1.hide();
+//   $(currentlink).show();
+// })
+
+//-----------------------------------------------------------------------\
 
 let num = 1;
 function nextGallery() {
+
   //위에서아래로
   num++;
   if (num >= 7) {

@@ -180,7 +180,7 @@ header .header_bottom_2 {
 }
 header .header_bottom {
 	display: block;
-	height: 488px;
+	height: 1000px;
 	z-index: 999;
 }
 
@@ -295,15 +295,6 @@ section h3 {
 	background-size:cover ;
 
 }
-
-#buttonList {
-	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 10%;
-  z-index: 999999999999999999999999999999999999;
-}
-
 #buttonList li {
 	width: 17px;
 	height: 18px;
@@ -347,21 +338,19 @@ section h3 {
 	width: 100%;
 	height: 100%;
 }
-#brandVisual .slogan {
-	left: 30%;
-	top: 40%;
+.header_bottom .slogan {
+	top: 30%;
 	transform: translateY(-30%);
-	z-index: 9999;
+	z-index: 0;
 }
 
-#brandVisual #buttonList {
+.header_bottom #buttonList {
 	display: flex;
-	left: 30%;
+	position: absolute;
 	top: 55%;
-	transform: translateY(-50%);
 	z-index: 99999;
 }
-#brandVisual #buttonList li{
+.header_bottom #buttonList li{
 	width: 50px;
 	height: 5px;
 	margin: 0 5px;
@@ -369,7 +358,7 @@ section h3 {
 	background-color: rgba(255, 255, 255, 0);
 	border: white solid 1px;
 }
-#brandVisual #buttonList li {
+.header_bottom #buttonList li {
 	width: 50px;
 	height: 5px;
 	margin: 0 5px;
@@ -377,30 +366,28 @@ section h3 {
 	background-color: rgb(255, 255, 255);
 	border: white solid 1px;
 }
-#brandVisual .slogan > span {
+.header_bottom .slogan > span {
 	color: white;
 	display: block;
 	letter-spacing: -3px;
 	text-shadow: 3px 4px 5px #757575;
 }
-#brandVisual .slogan .top {
+.header_bottom .slogan .top {
 	font-size: 30px;
 }
-#brandVisual .slogan .bottom {
+.header_bottom .slogan .bottom {
 	font-size: 44px;
 	font-weight: 900;
 }
 
-#brandVisual .mainfunc {
+.header_bottom .mainfunc {
 	width: 100%;
 	display: flex;
-	left: 30%;
-	top: 70%;
-	transform: translateY(-30%);
-	z-index: 9999;
+	top: 80%;
+	z-index: 9000000000999;
 }
 
-#brandVisual .mainfunc li a {
+.header_bottom .mainfunc li a {
 	border: none;
 	background-color: white;
 	border-radius: 15px;
@@ -420,20 +407,20 @@ section h3 {
 	display: block;
 	text-align: center;
 }
-#brandVisual .mainfunc li a:hover {
+.header_bottom .mainfunc li a:hover {
 	color: blue;
 	outline: #5266cf solid 2px;
 	outline-offset: -2px;
 	transform: scale(0.97);
 }
-#brandVisual .mainfunc li a:hover > i {
+.header_bottom .mainfunc li a:hover > i {
 	color: #5266cf;
 	transform: rotateY(360deg);
 	transition-duration: 0.7s;
 	transition-timing-function: ease-in-out;
 }
 
-#brandVisual .mainfunc li a span {
+.header_bottom .mainfunc li a span {
 	font-size: 14px;
 	display: block;
 	line-height: 1.2;
@@ -1178,15 +1165,13 @@ section h3 {
 .footul4 li:nth-child(4) > a :hover {
 	background-color: rgb(2, 243, 2);
 }
-/* .pageblur .blur{
-  display: block;
-  position: absolute;
-  position: fixed !important;
+#pageblur .dim{
+  	display: block;
+  	position: fixed !important;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 999999999999999999999999999999;
     background: rgba(204, 73, 73, 0.576) !important;
     opacity: 0.5;
-} */
+}

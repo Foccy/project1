@@ -10,10 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
 $(".dep1_0 li, .header_bottom_2")
 	.mouseover(function () {
 		$(".header_bottom_2").stop().slideDown(0);
-		$("dep2").css("background : gray");
+		$("#pageblur").addClass(".dim")
 	})
 	.mouseout(function () {
 		$(".header_bottom_2").stop().slideUp(0);
+		$("#pageblur").removeClass(".dim")
 	});
 
 //++++++++++++++++++++
@@ -26,12 +27,12 @@ $(".dep0_1>a")
 		$("dep0_1_1").stop().slideUp(1000);
 	});
 //+++++
-// $("")
+// $(".dep1_0 li, .header_bottom_2")
 // .mouseover(function(){
-//   $(".pageblur").addClass(".blur")
+//   $("pageblur").stop().css("display", "block")
 // })
 // .mouseout(function(){
-//   $(".pageblur").removeClass(".blur")
+//   $("pageblur").stop().css("display", "none")
 // })
 //++++
 $(".dep1_0_1, .script1")

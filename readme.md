@@ -17,7 +17,7 @@
         </li>
     </ul>
 
-### commit - mainSlideTab
+### commit - mainSlideMainfuncTab
 
 <ul>
     <li>

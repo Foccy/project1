@@ -147,6 +147,23 @@ $(".dep1_0_5, .script5")
   .mouseout(function () {
     $(".script5").css("background", "white");
   });
+//---------------------------1st slide mainfunc tab-------------------------------------//
+
+var tabmenu = $(".changeButton a");
+var menulist = $(".func2>ul");
+tabmenu.eq(0).addClass("active1");
+menulist.eq(0).show();
+
+tabmenu.click(function (s) {
+  s.preventDefault();
+  let take = $(this);
+  let nowlink = take.attr("href");
+  tabmenu.removeClass("active1");
+  take.addClass("active1");
+  menulist.hide();
+  $(nowlink).show();
+});
+
 //---------------------------second slide tab-------------------------------------//
 
 var tabmenu1 = $(".menu1 a");

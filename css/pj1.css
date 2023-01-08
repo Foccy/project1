@@ -362,15 +362,49 @@ section h3 {
   font-size: 44px;
   font-weight: 900;
 }
+.func .changeButton {
+  display: flex;
+  top: 70%;
+  width: 240px;
+  height: 45px;
+  box-shadow: 6px 8px 10px rgb(0 0 0 / 5%);
+  border-radius: 23px;
+  position: absolute;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
 
-.header_bottom .mainfunc {
+.func .changeButton li a {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: -0.34px;
+  padding: 0 37px;
+}
+.func .changeButton li a.active1 {
+  margin: -4px;
+  border-radius: 23px;
+  background-color: #6479eb;
+  width: 63px;
+  margin-left: 1px;
+  height: 57px;
+}
+.header_bottom .mainfunc1 {
   width: 100%;
   display: flex;
-  top: 65%;
+  top: 80%;
+  z-index: 9000000000999;
+}
+.header_bottom .mainfunc2 {
+  width: 100%;
+  display: flex;
+  top: 80%;
   z-index: 9000000000999;
 }
 
-.header_bottom .mainfunc li a {
+.header_bottom .mainfunc1 li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -384,26 +418,63 @@ section h3 {
   display: block;
   line-height: 1.2;
 }
-.mainfunc li a i {
+.header_bottom .mainfunc2 li a {
+  border: none;
+  background-color: white;
+  border-radius: 15px;
+  width: 115px;
+  height: 115px;
+  margin: 7px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgb(143, 143, 143);
+  font-size: 14px;
+  display: block;
+  line-height: 1.2;
+}
+.mainfunc1 li a i {
   font-size: 40px;
   padding: 15px;
   display: block;
   text-align: center;
 }
-.header_bottom .mainfunc li a:hover {
+.mainfunc2 li a i {
+  font-size: 40px;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+.header_bottom .mainfunc1 li a:hover {
   color: blue;
   outline: #5266cf solid 2px;
   outline-offset: -2px;
   transform: scale(0.97);
 }
-.header_bottom .mainfunc li a:hover > i {
+.header_bottom .mainfunc2 li a:hover {
+  color: blue;
+  outline: #5266cf solid 2px;
+  outline-offset: -2px;
+  transform: scale(0.97);
+}
+.header_bottom .mainfunc1 li a:hover > i {
+  color: #5266cf;
+  transform: rotateY(360deg);
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+.header_bottom .mainfunc2 li a:hover > i {
   color: #5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
 
-.header_bottom .mainfunc li a span {
+.header_bottom .mainfunc1 li a span {
+  font-size: 14px;
+  display: block;
+  line-height: 1.2;
+}
+.header_bottom .mainfunc2 li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;

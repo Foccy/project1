@@ -17,7 +17,15 @@
         </li>
     </ul>
 
-### commit - 2slide tabmenu query,
+### commit - mainSlideTab
+
+<ul>
+    <li>
+        커밋내용:mainslide - mainfunc 탭 
+    </li>
+</ul>
+
+### commit - 2slide tabmenu query,buttonlist css
 
 <ul>
     <li>

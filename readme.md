@@ -1,81 +1,87 @@
-# QnA, 해결
+# Project Name
+> 프로젝트에 대한 요약설명
+> 구현화면보기 [_here_](https://qwerewqwerew.github.io/book01/)
 
-<hr>
 
-## tips and add
+## 목차
+* [제작과정](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
 
-<ul>
-        <li>
-            자주쓰는 옵션(position display) reset.css와 함께 추가 해두고 class로 쓰도록 하자 border font)
-        </li>
-        <li>
-            border,font bg등 웹페이지에서 통용되는 옵션을 미리 설정하고 사용하면 편하다
-        </li>
-        <hr>
-        <li>
-            1. navi바 mouseover: 전체화면 blur
-        </li>
-    </ul>
 
-### commit - mainSlideMainfuncTab
+## General Information
+> 기획서 보기 [_here_](https://github.com/Foccy/project_1/blob/main/%EA%B8%B0%ED%9A%8D%EC%84%9C.pdf)
+- 기획서의 목차작성
+- 기획서의 내용을 간락히 요약 정리
 
-<ul>
-    <li>
-        커밋내용:mainslide - mainfunc 탭 
-    </li>
-</ul>
+## Technologies Used
+<!-- 사용한 기술환경 (언어와 버전을 작성) -->
+- Tech 1 - HTML5
+- Tech 2 - CSS3
+- Tech 3 - ES6
 
-### commit - 2slide tabmenu query,buttonlist css
 
-<ul>
-    <li>
-        커밋내용: 2슬라이드 탭메뉴 구현 ,  메인슬라이드 buttonList css 수정
-    </li>
-</ul>
+## Hierarchy
+<!-- 가능할 경우 html 구조를 트리구조로 표현 -->
+```text
+folder1/
+└── folder2/
+    ├── folder3/
+    │   ├── file1
+    │   └── file2
+    └── folder4/
+        ├── file3
+        └── file4
+```
 
-### commit - mainslide css modify
+## Features
+- 구현기능 1:
+- 구현기능 2:
+- 구현기능 3:
+- 구현기능 4:
 
-<ul>
-    <li>커밋 내용 :
-        css 구조 수정후에 slogan, buttonList, mainfunc 메인슬라이드에서 
-        벗어난 것 수정했음. heade> header bottom 안으로 옮김
-    </li>
-</ul>
 
-### commit - slide jquery
+## Screenshots
+<!-- ![구현화면스크린샷](./img/screenshot.png) -->
+<!-- If you have screenshots you'd like to share, include them here. -->
 
-<ul>
-    <li>
-        메인 슬라이드 jquery on 은 돌아가는데 
-        z인덱스는 안먹어서 화면이 안돌아감
-    </li>
-    <li>
-        문제 해결 : z인덱스 문제x css 전반적인 position 문제 구조 수정함
-    </li>
-</ul>
 
-### commit - hover complete
+## Project Status
+프로젝트의 진행상태: 진행중 / 진행완료/ 
 
-<ul>
-    <li>
-        2슬라이드 
-    </li>
-</ul>
 
-### commit - hover 추가
+## Room for Improvement
+개선사항
 
-<ul>
-    <li>
-    commit.mainfuc 아이콘, a안텍스트가 함께 rotate 되는 문제> 아이콘만 혼자 돌아야함. hover시 떨림 문제
-    </li>
-    <li>
-        border 대신 outline, outline-offset을 함께 써줌.
-    </li>
-    <li>
-        같은 문제로, .wrap_card 안의 이미지만 transition scale을 먹어야하는데 함께 움직이는 문제
-    </li>
-    <li>
-        이미지 태그를 감싸고 있는 card 태그에 overflow:hidden 부모요소에 적용
-        + img태그 크기를 원래 박스보다 크게 잡고 max height 주면 쪼그라듦도 없음
-    </li>
-</ul>
+개선사항
+- 공지사항 슬라이드 애니메이션 떨림
+- 푸터 패밀리사이트 select 오류
+
+To do:
+- 추가할 기능1
+- 추가할 기능2
+
+
+## Acknowledgements
+Give credit here.
+- 메인 포트폴리오주소 [this tutorial](https://www.example.com).
+- 방문해주셔서 감사합니다....
+
+
+## Contact
+Created by [@mango](pouneun@naver.com) - 언제든지 연락주세요!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->

@@ -19,7 +19,7 @@ $(".dep1_0 li, .header_bottom_2")
     $("#pageblur").removeClass(".dim");
   });
 
-  //--------------------------------------------------first slide query
+//--------------------------------------------------first slide query
 $(function () {
   const visual = $("#brandVisual>ul>li");
   const button = $("#buttonList>li");
@@ -180,4 +180,23 @@ tabmenu1.click(function (s) {
   $(currentlink).show();
 });
 
-//-----------------------------------------------------------------------\
+//--------------------------third  slide tab---------------------------------------------\
+
+var thirdTabmenu = $(".info1-1 li a");
+var thirdPanels = $(".info2>div");
+thirdTabmenu.eq(0).addClass("activate");
+thirdPanels.eq(0).show();
+
+thirdTabmenu.click(function (s) {
+  s.preventDefault();
+  let click = $(this);
+  let currentlink = click.attr("href");
+  thirdTabmenu.removeClass("activate");
+  click.addClass("activate");
+  thirdPanels.hide();
+  $(currentlink).show();
+  if ($(click)) {
+    $(click).css("color", "black"), ("font-weight", "1100");
+  } else {
+  }
+});

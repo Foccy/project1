@@ -1,6 +1,6 @@
 # Project Name
 > 프로젝트에 대한 요약설명
-> 구현화면보기 [_here_](https://qwerewqwerew.github.io/book01/)
+> 구현화면보기 [_here_](https://foccy.github.io/project_1/)
 
 
 ## 목차
@@ -77,7 +77,7 @@ Give credit here.
 
 
 ## Contact
-Created by [@mango](pouneun@naver.com) - 언제든지 연락주세요!
+Created by [@Foccy](pouneun@naver.com) - 언제든지 연락주세요!
 
 
 <!-- Optional -->

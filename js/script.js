@@ -19,8 +19,7 @@ $(".dep1_0 li, .header_bottom_2")
     $("#pageblur").removeClass(".dim");
   });
 
-//--------------------------------------------------first slide query
-
+  //--------------------------------------------------first slide query
 $(function () {
   const visual = $("#brandVisual>ul>li");
   const button = $("#buttonList>li");

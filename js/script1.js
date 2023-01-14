@@ -53,6 +53,12 @@ $(function () {
     list.stop().animate({ "margin-left": -li_width * num }, 1000); //요기의num
     return false;
   });
+
+  $(".pause").click(function (s) {
+    s.preventDefault()
+    list.clearInterval(stopAll, goToEnd)
+  })
+
   $(".prev").click(function () {
     if (num == 0) {
       num = total; //3
@@ -63,3 +69,40 @@ $(function () {
     return false;
   });
 });
+
+
+//--------------------------------third courasel -------------------------
+
+$(function () {
+  //변수
+  let 
+    list = $("#wrap3-2"), 
+    num = 0;
+  const 
+    show_num = 4,
+    total = list.find("ul").length,
+    li_width = list.find("ul").eq(0).width()
+    copyObj = list.find("ul").clone(),
+    ctrl = $(".ctrl");
+    
+    list.append(copyObj)
+
+  $('.rightbtn').click(function () {
+    if (num == total) {
+      num = 0;  //0
+      list.css("margin-left",0)
+    }
+    num++;  //요기의 num 0
+    list.stop().animate({ "margin-left": -li_width * num}, 1000).css("margin-left", "30px")
+    return false;
+  });
+  $(".leftbtn").click(function () {
+    if (num == 0) {
+      num = total;//3
+      list.css("margin-left", -li_width * num)
+    }
+    num--;
+    list.stop().animate({"margin-left": -li_width * num }, 500);
+    return false;
+  })
+})

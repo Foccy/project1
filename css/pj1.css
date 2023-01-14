@@ -858,7 +858,15 @@ section h3 {
 
 .mainul {
   display: flex;
-  padding: 30px 14px 30px 30px;
+  padding: 30px 30px 30px 30px;
+}
+.wrapping{
+  position: absolute;
+    overflow: hidden;
+    width: 1104px;
+    height: 305px;
+    right: 288px;
+
 }
 
 .mainul a img {
@@ -927,14 +935,13 @@ section h3 {
 .wrap3-1-3-4 a:hover > i {
   background-color: rgb(0, 255, 55);
 }
-.wrap3-2 {
-  padding: 0px 40px;
+#wrap3-2 {
   margin-top: 10px;
 }
-.wrap3-2 ul {
+#wrap3-2 ul {
   padding: 0px 15px;
 }
-.wrap3-2 ul:hover > li p {
+#wrap3-2 ul:hover > li p {
   text-decoration: underline;
 }
 .wrap3-0 ul > li > img {
@@ -946,13 +953,14 @@ section h3 {
   margin-right: 5px;
 }
 .wrap3-0 {
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
   align-items: flex-end;
-  padding-right: 50px;
+  margin: 35px 60px;
+  margin-left: 45px;
 }
 .wrap3-0-1 {
-  margin-right: 50px;
+  position:absolute;
+  right:100px;
 }
 .wrap3-0-1 a {
   display: inline-block;
@@ -966,18 +974,18 @@ section h3 {
   background-color: rgb(179, 179, 179);
   color: white;
 }
-.wrap3-2 ul li h5 {
+#wrap3-2 ul li h5 {
   font-size: 14px;
   letter-spacing: 0;
   line-height: 3;
   color: gray;
 }
-.wrap3-2 ul li p {
+#wrap3-2 ul li p {
   font-size: 15px;
   line-height: 1.5;
   color: rgb(71, 71, 71);
 }
-.wrap3-2 ul li h5 img {
+#wrap3-2 ul li h5 img {
   width: 20px;
   height: 20px;
   color: gray;

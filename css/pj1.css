@@ -940,6 +940,7 @@ section h3 {
 }
 #wrap3-2 ul {
   padding: 0px 15px;
+  
 }
 #wrap3-2 ul:hover > li p {
   text-decoration: underline;

@@ -95,6 +95,24 @@ button {
   display: block;
 }
 
+.w100 {
+  max-width: 100%;
+  width: 100%;
+}
+
+.w1280 {
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+}
+
+body a {
+  width: 60%;
+  font-size: 20px;
+  line-height: 1.618;
+  line-height: 1.75;
+}
+
 /* margin padding */
 .mb10 {
   margin-bottom: 10px !important;

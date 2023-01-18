@@ -101,7 +101,26 @@ $(function () {
   }
 }); //jQuery
 
-//--------------------------------------------------first slide depth,color query
+
+
+
+//----------------------------------------firstslide Global
+
+let gnbLiA = $(".dep0_1>li>.global");
+console.log(gnbLiA);
+
+gnbLiA.click(function () {
+  if (!$(this).next().hasClass("on")) {
+    $(".dep0_1_1").removeClass("on");
+    $(this).next().addClass("on");
+  } else {
+    $(this).next().removeClass("on");
+  }
+});
+
+
+
+//--------------------------------------------first slide depth,color query
 
 $(".dep0_1>a")
   .click(function () {
@@ -161,42 +180,4 @@ tabmenu.click(function (s) {
   take.addClass("active1");
   menulist.hide();
   $(nowlink).show();
-});
-
-//---------------------------second slide tab-------------------------------------//
-
-var tabmenu1 = $(".menu1 a");
-var panels1 = $(".menu2_wrap>div");
-tabmenu1.eq(0).addClass("active");
-panels1.eq(0).show();
-
-tabmenu1.click(function (s) {
-  s.preventDefault();
-  let click = $(this);
-  let currentlink = click.attr("href");
-  tabmenu1.removeClass("active");
-  click.addClass("active");
-  panels1.hide();
-  $(currentlink).show();
-});
-
-//--------------------------third  slide tab---------------------------------------------\
-
-var thirdTabmenu = $(".info1-1 li a");
-var thirdPanels = $(".info2>div");
-thirdTabmenu.eq(0).addClass("activate");
-thirdPanels.eq(0).show();
-
-thirdTabmenu.click(function (s) {
-  s.preventDefault();
-  let click = $(this);
-  let currentlink = click.attr("href");
-  thirdTabmenu.removeClass("activate");
-  click.addClass("activate");
-  thirdPanels.hide();
-  $(currentlink).show();
-  if ($(click)) {
-    $(click).css("color", "black"), ("font-weight", "1100");
-  } else {
-  }
 });

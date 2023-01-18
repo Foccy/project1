@@ -1,18 +1,29 @@
-//----------------------------------------firstslide Global
+//--------------------------third  slide tab---------------------------------------------\
 
-let gnbLiA = $(".dep0_1>li>.global");
-console.log(gnbLiA);
+var thirdTabmenu = $(".info1-1 li a");
+var thirdPanels = $(".info2>div");
+thirdTabmenu.eq(0).addClass("activate");
+thirdPanels.eq(0).show();
 
-gnbLiA.click(function () {
-  if (!$(this).next().hasClass("on")) {
-    $(".dep0_1_1").removeClass("on");
-    $(this).next().addClass("on");
+thirdTabmenu.click(function (s) {
+  s.preventDefault();
+  let click = $(this);
+  let currentlink = click.attr("href");
+  thirdTabmenu.removeClass("activate");
+  click.addClass("activate");
+  thirdPanels.hide();
+  $(currentlink).show();
+  if ($(click)) {
+    $(click).css("color", "black"), ("font-weight", "1100");
   } else {
-    $(this).next().removeClass("on");
   }
 });
 
-//------------------------third rolling--------
+
+
+//--------------------------------------third rolling--------
+
+
 $(function () {
   //변수
   let list = $("#card3-1"),
@@ -71,7 +82,9 @@ $(function () {
 });
 
 
-//--------------------------------third courasel -------------------------
+//-----------------------------------------third courasel -------------------------
+
+
 
 $(function () {
   //변수

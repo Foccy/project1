@@ -31,10 +31,6 @@
 .info1-1 li a:hover {
   color: #475e96;
 }
-.info1-1 li a:visited {
-  color: black;
-  font-weight: 900;
-}
 .info2 {
   width: 780px;
   height: 180px;
@@ -229,13 +225,12 @@
   display: flex;
   padding: 30px 30px 30px 30px;
 }
-.wrapping{
+.wrapping {
   position: absolute;
-    overflow: hidden;
-    width: 1104px;
-    height: 305px;
-    right: 288px;
-
+  overflow: hidden;
+  width: 1104px;
+  height: 305px;
+  right: 288px;
 }
 
 .mainul a img {
@@ -291,12 +286,7 @@
   background-color: red;
 }
 .wrap3-1-3-2 a:hover > i {
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 .wrap3-1-3-3 a:hover > i {
   background-color: rgb(89, 38, 255);
@@ -309,7 +299,6 @@
 }
 #wrap3-2 ul {
   padding: 0px 15px;
-  
 }
 #wrap3-2 ul:hover > li p {
   text-decoration: underline;
@@ -329,8 +318,8 @@
   margin-left: 45px;
 }
 .wrap3-0-1 {
-  position:absolute;
-  right:100px;
+  position: absolute;
+  right: 100px;
 }
 .wrap3-0-1 a {
   display: inline-block;

@@ -13,11 +13,6 @@ thirdTabmenu.click(function (s) {
   click.addClass("activate");
   thirdPanels.hide();
   $(currentlink).show();
-  if ($(click)) {
-    $(click).css("color", "black"), ("font-weight", "900");
-  } else {
-    $(click).css("colo");
-  }
 });
 
 //--------------------------------------third rolling--------

@@ -30,6 +30,7 @@
 }
 .info1-1 li a:hover {
   color: #475e96;
+  font-weight: 600;
 }
 .info2 {
   width: 780px;
@@ -116,10 +117,13 @@
   float: right;
   margin-left: 95px;
 }
-
-.info2-2 .activate {
-  display: block;
+.info1-1 li .activate{
+  color:black;
+  font-size:large;
+  font-weight: 900;
+  font-size:20px ;
 }
+
 .info2-2 {
   width: 70px;
   height: 28px;
@@ -328,6 +332,7 @@
   width: 30px;
   height: 30px;
   text-align: center;
+  line-height: 1.4;
 }
 .wrap3-0-1 a:hover {
   background-color: rgb(179, 179, 179);

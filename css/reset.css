@@ -86,6 +86,9 @@ button {
 .df {
   display: flex;
 }
+.dn {
+  display: none;
+}
 .cf:after {
   content: "";
   display: block;

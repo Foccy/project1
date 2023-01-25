@@ -26,6 +26,10 @@
   transform: translateY(-7px);
   transition-duration: 0.4s;
 }
+.menu1 li .active{
+  color: white;
+  background-color: #5266cf;
+}
 .menu1 li a i {
   display: block;
   text-align: center;
@@ -85,7 +89,7 @@
 
 .wrap_card:hover {
   border: 0.1px solid #5b88ff;
-  box-shadow: 10px 10px 10px #545860;
+  box-shadow: 6px 7px 19px 4px #acafb3;
   transition-timing-function: linear;
   transition-duration: 0.3s;
 }

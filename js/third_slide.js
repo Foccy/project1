@@ -16,6 +16,7 @@ thirdTabmenu.click(function (s) {
   if ($(click)) {
     $(click).css("color", "black"), ("font-weight", "900");
   } else {
+    $(click).css("colo");
   }
 });
 

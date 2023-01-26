@@ -15,6 +15,24 @@ thirdTabmenu.click(function (s) {
   $(currentlink).show();
 });
 
+//--------------------------third  slide tab---------------------------------------------\
+
+// var thirdTabmenu = $(".info1-1 li a");
+// var thirdPanels = $(".info2>div");
+// thirdTabmenu.eq(0).addClass("activate");
+// thirdPanels.eq(0).show();
+
+// thirdTabmenu.click(function (s) {
+//   s.preventDefault();
+//   h;
+//   let click = $(this);
+//   let currentlink = click.attr("href");
+//   thirdTabmenu.removeClass("activate");
+//   click.addClass("activate");
+//   thirdPanels.hide();
+//   $(currentlink).show();
+// });
+
 //--------------------------------------third rolling--------
 
 $(function () {
@@ -80,7 +98,7 @@ $(function () {
   //변수
   let list = $("#wrap3-2"),
     num = 0;
-  const show_num = 4,
+  const show_num = 5,
     total = list.find("ul").length,
     li_width = list.find("ul").eq(0).width();
   (copyObj = list.find("ul").clone()), (ctrl = $(".ctrl"));
@@ -99,6 +117,7 @@ $(function () {
       .css("margin-left", "30px");
     return false;
   });
+
   $(".leftbtn").click(function () {
     if (num == 0) {
       num = total; //3

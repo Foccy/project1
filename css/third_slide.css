@@ -117,11 +117,11 @@
   float: right;
   margin-left: 95px;
 }
-.info1-1 li .activate{
-  color:black;
-  font-size:large;
+.info1-1 li .activate {
+  color: black;
+  font-size: large;
   font-weight: 900;
-  font-size:20px ;
+  font-size: 20px;
 }
 
 .info2-2 {
@@ -301,7 +301,7 @@
 #wrap3-2 {
   margin-top: 10px;
 }
-#wrap3-2 ul {
+#wrap3-2 ul li {
   padding: 0px 15px;
 }
 #wrap3-2 ul:hover > li p {

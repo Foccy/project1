@@ -77,7 +77,8 @@ $(function () {
 
   $(".pause").click(function (s) {
     s.preventDefault();
-    list.clearInterval(stopAll, goToEnd);
+
+    list.clearInterval(timer);
   });
 
   $(".prev").click(function () {
@@ -128,8 +129,6 @@ $(function () {
   });
 });
 
-
-
 $(function () {
   //변수
   let list = $("#wrap3-1"),
@@ -164,8 +163,6 @@ $(function () {
     return false;
   });
 });
-
-
 
 $(function () {
   //변수

@@ -241,7 +241,9 @@
   width: 220px;
   height: 160px;
 }
-
+#wrap3-1>ul>li {
+  padding: 0px 15px;
+}
 .wrap3-1-1 {
   font-size: 22px;
   font-weight: 800;
@@ -299,7 +301,13 @@
   background-color: rgb(0, 255, 55);
 }
 #wrap3-2 {
+  display: flex;
   margin-top: 10px;
+  margin: 7px -14px;
+}
+#wrap3-3{
+  display: flex;
+    margin: 7px -14px;
 }
 #wrap3-2 ul li {
   padding: 0px 15px;
@@ -318,7 +326,7 @@
 .wrap3-0 {
   overflow: hidden;
   align-items: flex-end;
-  margin: 35px 60px;
+  margin: 35px -15px;
   margin-left: 45px;
 }
 .wrap3-0-1 {

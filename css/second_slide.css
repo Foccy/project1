@@ -1,3 +1,6 @@
+#second_slide{
+  height: 100vh;
+}
 .menu1 {
   display: flex;
   align-items: flex-end;

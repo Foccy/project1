@@ -1,4 +1,6 @@
-
+#fourth_slide{
+  height: 100vh;
+}
 #fourth_slide .wrap {
   display: flex;
   justify-content: space-between;

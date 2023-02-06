@@ -348,29 +348,29 @@ section h3 {
 /* headerbottom 안에 들어있음 주의 slogan, mainfunc, button */
 
 
-.header_bottom .slogan {
+.slogan {
   top: 30%;
   transform: translateY(-30%);
   z-index: 0;
 }
 
-.header_bottom #buttonList {
+#buttonList {
   display: flex;
   position: absolute;
   top: 43%;
   z-index: 99999;
 }
 
-.header_bottom .slogan > span {
+.slogan > span {
   color: white;
   display: block;
   letter-spacing: -3px;
   text-shadow: 3px 4px 5px #757575;
 }
-.header_bottom .slogan .top {
+.slogan .top {
   font-size: 30px;
 }
-.header_bottom .slogan .bottom {
+ .slogan .bottom {
   font-size: 44px;
   font-weight: 900;
 }
@@ -404,20 +404,20 @@ section h3 {
   height: 52px;
   line-height: 3.5;
 }
-.header_bottom .mainfunc1 {
+ .mainfunc1 {
   width: 100%;
   display: flex;
   top: 57%;
   z-index: 9000000000999;
 }
-.header_bottom .mainfunc2 {
+ .mainfunc2 {
   width: 100%;
   display: flex;
   top: 57%;
   z-index: 9000000000999;
 }
 
-.header_bottom .mainfunc1 li a {
+ .mainfunc1 li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -431,7 +431,7 @@ section h3 {
   display: block;
   line-height: 1.2;
 }
-.header_bottom .mainfunc2 li a {
+ .mainfunc2 li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -457,37 +457,37 @@ section h3 {
   display: block;
   text-align: center;
 }
-.header_bottom .mainfunc1 li a:hover {
+ .mainfunc1 li a:hover {
   color: blue;
   outline: #5266cf solid 2px;
   outline-offset: -2px;
   transform: scale(0.97);
 }
-.header_bottom .mainfunc2 li a:hover {
+ .mainfunc2 li a:hover {
   color: blue;
   outline: #5266cf solid 2px;
   outline-offset: -2px;
   transform: scale(0.97);
 }
-.header_bottom .mainfunc1 li a:hover > i {
+ .mainfunc1 li a:hover > i {
   color: #5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
-.header_bottom .mainfunc2 li a:hover > i {
+ .mainfunc2 li a:hover > i {
   color: #5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
 
-.header_bottom .mainfunc1 li a span {
+ .mainfunc1 li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;
 }
-.header_bottom .mainfunc2 li a span {
+ .mainfunc2 li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;

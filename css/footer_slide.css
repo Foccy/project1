@@ -1,6 +1,7 @@
-.footer{
-  height: 100vh;
+.sectionfooter {
+  height: 260px !important;
 }
+
 .footer_inner1 {
   width: 100%;
   height: 60px;

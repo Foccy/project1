@@ -1,6 +1,3 @@
-
-
-
 /* ------------------later------------------------------- */
 
 #layer {
@@ -31,7 +28,6 @@
   color: #fff;
 }
 
-
 /* ------------------slide bar menu------------------------------- */
 
 .side_bar_menu {
@@ -40,9 +36,17 @@
   top: 50%;
 }
 
-/* ------------------ header  ------------------------------- */
+/* ------------------ header ------------------------------- */
 header {
   z-index: 999999;
+}
+.header_cover {
+  height: 150px;
+  background: linear-gradient(rgba(63, 63, 63, 0.459), rgba(175, 175, 175, 0));
+}
+.header_cover .sticky {
+  position: fixed;
+  top: 0;
 }
 
 header .header_top_hidden {
@@ -149,11 +153,7 @@ header .header_top .dep0 li a span {
   top: 50%;
 }
 
-
 /* -------------header bottom------------- */
-
-
-
 
 header .header_bottom {
   display: block;
@@ -186,7 +186,7 @@ header .header_bottom_2 {
 }
 header .header_bottom {
   display: block;
-  height: 1000px;
+  height: 500px;
   z-index: 999;
 }
 
@@ -243,7 +243,7 @@ header .header_bottom .dep1 .dep1_2 .dep2 li a:hover {
 }
 
 section h2 {
-  margin-top: 100px;
+  margin-top: 15%;
   text-align: center;
   font-size: 50px;
   font-weight: 1000;
@@ -257,9 +257,7 @@ section h3 {
   color: gray;
 }
 
-
-/********************   brandVisual  ******************************************/
-
+/******************** brandVisual ******************************************/
 
 #brandVisual {
   position: relative;
@@ -347,17 +345,17 @@ section h3 {
 
 /* headerbottom 안에 들어있음 주의 slogan, mainfunc, button */
 
-
 .slogan {
-  top: 30%;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
   transform: translateY(-30%);
-  z-index: 0;
 }
 
 #buttonList {
   display: flex;
   position: absolute;
-  top: 43%;
+  top: 65%;
   z-index: 99999;
 }
 
@@ -370,13 +368,14 @@ section h3 {
 .slogan .top {
   font-size: 30px;
 }
- .slogan .bottom {
+.slogan .bottom {
   font-size: 44px;
   font-weight: 900;
 }
 .func .changeButton {
+  z-index: 99999;
   display: flex;
-  top: 48%;
+  top: 78%;
   width: 236px;
   height: 45px;
   box-shadow: 6px 8px 10px rgb(0 0 0 / 5%);
@@ -404,20 +403,20 @@ section h3 {
   height: 52px;
   line-height: 3.5;
 }
- .mainfunc1 {
+.mainfunc1 {
   width: 100%;
   display: flex;
-  top: 57%;
+  top: 84%;
   z-index: 9000000000999;
 }
- .mainfunc2 {
+.mainfunc2 {
   width: 100%;
   display: flex;
-  top: 57%;
+  top: 84%;
   z-index: 9000000000999;
 }
 
- .mainfunc1 li a {
+.mainfunc1 li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -431,7 +430,7 @@ section h3 {
   display: block;
   line-height: 1.2;
 }
- .mainfunc2 li a {
+.mainfunc2 li a {
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -457,37 +456,37 @@ section h3 {
   display: block;
   text-align: center;
 }
- .mainfunc1 li a:hover {
+.mainfunc1 li a:hover {
   color: blue;
   outline: #5266cf solid 2px;
   outline-offset: -2px;
   transform: scale(0.97);
 }
- .mainfunc2 li a:hover {
+.mainfunc2 li a:hover {
   color: blue;
   outline: #5266cf solid 2px;
   outline-offset: -2px;
   transform: scale(0.97);
 }
- .mainfunc1 li a:hover > i {
+.mainfunc1 li a:hover > i {
   color: #5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
- .mainfunc2 li a:hover > i {
+.mainfunc2 li a:hover > i {
   color: #5266cf;
   transform: rotateY(360deg);
   transition-duration: 0.7s;
   transition-timing-function: ease-in-out;
 }
 
- .mainfunc1 li a span {
+.mainfunc1 li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;
 }
- .mainfunc2 li a span {
+.mainfunc2 li a span {
   font-size: 14px;
   display: block;
   line-height: 1.2;

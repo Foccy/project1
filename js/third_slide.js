@@ -31,7 +31,10 @@ caraselTab.click(function (ss) {
   rollingCarasel.hide();
   $(currentlink2).show();
 });
-
+//--------------------------third  slide tab---------------------------------------------\
+let info = document.querySelectorAll(".card3-1");
+console.log(info.length);
+let infoNum = document;
 //--------------------------------------third rolling--------
 
 $(function () {
@@ -75,10 +78,8 @@ $(function () {
     return false;
   });
 
-  $(".pause").click(function (s) {
-    s.preventDefault();
-
-    list.clearInterval(timer);
+  $(".pause1").click(function (s) {
+    s.clearInterval(timer(setInterval));
   });
 
   $(".prev").click(function () {

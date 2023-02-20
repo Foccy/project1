@@ -101,9 +101,6 @@ $(function () {
   }
 }); //jQuery
 
-
-
-
 //----------------------------------------firstslide Global
 
 let gnbLiA = $(".dep0_1>li>.global");
@@ -117,8 +114,6 @@ gnbLiA.click(function () {
     $(this).next().removeClass("on");
   }
 });
-
-
 
 //--------------------------------------------first slide depth,color query
 
@@ -181,3 +176,28 @@ tabmenu.click(function (s) {
   menulist.hide();
   $(nowlink).show();
 });
+
+//---------------------------------------------------------------------------------------
+
+const gap = 500;
+function js() {
+  const nav = document.querySelector("#header");
+
+  let scrollTop;
+  window.addEventListener("scroll", function () {
+    scrollTop = window.scrollY;
+    animate(scrollTop);
+  });
+
+  const animate = (sct) => {
+    //sections
+    sections.forEach((el) => {
+      let sectionTop = el.offsetTop;
+      if (sct > sectionTop - gap) {
+        el.classList.add("sectionIn");
+      }
+    });
+    sct >= gap ? nav.classList.add("sticky") : nav.classList.remove("sticky");
+  };
+}
+js();

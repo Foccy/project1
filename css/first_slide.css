@@ -13,7 +13,7 @@
   padding: 2em;
   box-sizing: border-box;
   line-height: 2;
-  top: 200px;
+  top: 450px;
   left: 150px;
 }
 
@@ -37,16 +37,12 @@
 }
 
 /* ------------------ header ------------------------------- */
-header {
-  z-index: 999999;
-}
-.header_cover {
+#header {
+  z-index: 99111111111111111111111111111111111111111111111111111111999;
+  position: fixed !important;
+  top: 0 !important;
   height: 150px;
   background: linear-gradient(rgba(63, 63, 63, 0.459), rgba(175, 175, 175, 0));
-}
-.header_cover .sticky {
-  position: fixed;
-  top: 0;
 }
 
 header .header_top_hidden {
@@ -243,7 +239,7 @@ header .header_bottom .dep1 .dep1_2 .dep2 li a:hover {
 }
 
 section h2 {
-  margin-top: 15%;
+  margin-top: 7%;
   text-align: center;
   font-size: 50px;
   font-weight: 1000;

@@ -1,6 +1,6 @@
 # Project Name
 
-> 프로젝트에 대한 요약설명!!
+> 건강보험심사평가원
 > 구현화면보기 [_here_](https://foccy.github.io/project_1/)
 
 ## 목차

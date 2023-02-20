@@ -78,10 +78,6 @@ $(function () {
     return false;
   });
 
-  $(".pause1").click(function (s) {
-    s.clearInterval(timer(setInterval));
-  });
-
   $(".prev").click(function () {
     if (num == 0) {
       num = total; //3

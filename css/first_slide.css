@@ -1,4 +1,4 @@
-/* ------------------later------------------------------- */
+/* ------------------layer------------------------------- */
 
 #layer {
   display: block;
@@ -36,13 +36,72 @@
   top: 50%;
 }
 
+/* ------------------sticky menu------------------------------- */
+
+#quickMenu {
+  position: fixed;
+  right: 40px;
+  bottom: 70px;
+  width: 71px;
+  z-index: 9;
+}
+#quickOpen {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: -0.33px;
+  background-color: #007aad;
+  border: none;
+  background-image: linear-gradient(
+    -50deg,
+    #7184e8 0%,
+    #5266cf 42%,
+    #283991 100%
+  );
+  width: 100%;
+  height: 71px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+#toTop {
+  width: 100%;
+  height: 71px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #646464;
+  border: none;
+}
+.quick_list button {
+  width: 100%;
+  height: 71px;
+  border-radius: 100%;
+  border: 1px solid #bdbdbd;
+  background-color: #ffffff;
+  text-align: center;
+  color: #303030;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -0.65px;
+  margin: 2.5px 0;
+  line-height: 1.27;
+  font-size: 13px;
+}
+.quick_list li i {
+  font-size: 25px;
+}
+
 /* ------------------ header ------------------------------- */
 #header {
-  z-index: 99111111111111111111111111111111111111111111111111111111999;
+  z-index: 111;
+  position: fixed !important;
+  top: 0 !important;
+  height: 134px;
+  background: linear-gradient(rgba(63, 63, 63, 0.459), rgba(175, 175, 175, 0));
+}
+#header .sticky {
   position: fixed !important;
   top: 0 !important;
   height: 150px;
-  background: linear-gradient(rgba(63, 63, 63, 0.459), rgba(175, 175, 175, 0));
+  background: rgb(255, 33, 33) !important ;
 }
 
 header .header_top_hidden {
@@ -136,7 +195,7 @@ header .header_top .dep0 .dep0_2 a {
   color: white;
   font-weight: 400;
 }
-header .header_top .dep0 .dep0_1 .global {
+.dep0_1 .global {
   font-size: 14px;
   padding-right: 26px;
   color: white;
@@ -155,7 +214,6 @@ header .header_bottom {
   display: block;
   width: 100%;
   height: 64px;
-  overflow: hidden;
 }
 header .header_bottom_wrap {
   height: 65px;
@@ -182,8 +240,6 @@ header .header_bottom_2 {
 }
 header .header_bottom {
   display: block;
-  height: 500px;
-  z-index: 999;
 }
 
 header .header_bottom .dep1 {
@@ -347,6 +403,17 @@ section h3 {
   top: 50%;
   transform: translateY(-30%);
 }
+#stopbtn {
+  display: flex;
+  position: absolute;
+  top: 65%;
+  z-index: 99999;
+  transform: translate(200px, -15px);
+}
+#stopbtn i {
+  color: white;
+  font-size: 24px;
+}
 
 #buttonList {
   display: flex;
@@ -367,6 +434,9 @@ section h3 {
 .slogan .bottom {
   font-size: 44px;
   font-weight: 900;
+}
+.func2 a {
+  color: black !important;
 }
 .func .changeButton {
   z-index: 99999;

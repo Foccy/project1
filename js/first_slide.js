@@ -103,27 +103,31 @@ $(function () {
 
 //----------------------------------------firstslide Global
 
-let gnbLiA = $(".dep0_1>li>.global");
-console.log(gnbLiA);
+// let gnbLiA = $(".dep0_1>li>.global");
 
-gnbLiA.click(function () {
-  if (!$(this).next().hasClass("on")) {
-    $(".dep0_1_1").removeClass("on");
-    $(this).next().addClass("on");
-  } else {
-    $(this).next().removeClass("on");
-  }
-});
+// gnbLiA.click(function () {
+//   if (!$(this).next().hasClass("on")) {
+//     $(".dep0_1_1").removeClass("on");
+//     $(this).next().addClass("on");
+//   } else {
+//     $(this).next().removeClass("on");
+//   }
+// });
+
+// $(".dep0_1>a")
+//   .click(function () {
+//     $("dep0_1_1").stop().slideDown(1000).stop();
+//   })
+//   .click(function () {
+//     $("dep0_1_1").stop().slideUp(1000);
+//   });
+//--------------------------------------------quick menu
+
+let quickMenu = $(".quick_list");
+
+quickMenu.cli;
 
 //--------------------------------------------first slide depth,color query
-
-$(".dep0_1>a")
-  .click(function () {
-    $("dep0_1_1").stop().slideDown(1000).stop();
-  })
-  .click(function () {
-    $("dep0_1_1").stop().slideUp(1000);
-  });
 
 $(".dep1_0_1, .script1")
   .mouseover(function () {
@@ -178,26 +182,3 @@ tabmenu.click(function (s) {
 });
 
 //---------------------------------------------------------------------------------------
-
-const gap = 500;
-function js() {
-  const nav = document.querySelector("#header");
-
-  let scrollTop;
-  window.addEventListener("scroll", function () {
-    scrollTop = window.scrollY;
-    animate(scrollTop);
-  });
-
-  const animate = (sct) => {
-    //sections
-    sections.forEach((el) => {
-      let sectionTop = el.offsetTop;
-      if (sct > sectionTop - gap) {
-        el.classList.add("sectionIn");
-      }
-    });
-    sct >= gap ? nav.classList.add("sticky") : nav.classList.remove("sticky");
-  };
-}
-js();

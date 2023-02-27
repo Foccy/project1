@@ -170,6 +170,12 @@ header .header_top {
   left: 0;
   bottom: 0;
 }
+.search_bar span {
+  color: white;
+}
+.dep0_2 i {
+  color: white;
+}
 .header_top .dep0 li input {
   border: none;
   background-color: rgba(255, 255, 255, 0);
@@ -177,7 +183,7 @@ header .header_top {
 }
 
 header .header_top .dep0 li input::placeholder {
-  color: #d9dce2;
+  color: #b1b1b1;
   font-size: 14px;
   font-weight: normal;
 }
@@ -395,8 +401,13 @@ section h3 {
   height: 100%;
 }
 
-/* headerbottom 안에 들어있음 주의 slogan, mainfunc, button */
-
+/* headerbottom 안에 들어있음 주의 weather_api ,slogan, mainfunc, button */
+.weather_api {
+  z-index: 9999;
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+}
 .slogan {
   z-index: 9999;
   position: absolute;

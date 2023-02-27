@@ -12,7 +12,11 @@ $(document).ready(function () {
       if (idx > 1) {
         $("#header").css("background", "white");
         $("#header").css("border-bottom", "solid 1px gray");
+        $(".search_bar span").css("color", "black");
+        $(".dep0_2 i").css("color", "black");
         $("#header") > $("a").css("color", "black");
+        $("#logo_img").attr("src", "./images/logo_off1.png");
+        $(".search_bar::after").attr("background", "#000000c4");
       } else if ((idx = 1)) {
         $("#header").css(
           "background",
@@ -24,6 +28,10 @@ $(document).ready(function () {
         $("#header") > $(".dep1_0_3").css("color", "white");
         $("#header") > $(".dep1_0_4").css("color", "white");
         $("#header") > $(".dep1_0_5").css("color", "white");
+        $(".search_bar span").css("color", "white");
+        $(".dep0_2 i").css("color", "white");
+        $(".dep0_2").css("color", "white");
+        $("#logo_img").attr("src", "./images/logo_on1.png");
       }
       if (idx == 5) {
         activeMenu = $("#fp-nav")

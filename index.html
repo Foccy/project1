@@ -68,8 +68,7 @@
         구직용 포트폴리오로<br />
         상업적 목적이 없음을 알립니다.
       </p>
-      <div id="container_weather"></div>
-      <a href="https://www.data.go.kr/data/15084084/openapi.do">출처:기상청</a>
+
       <button>닫기</button>
     </div>
     <!-- popup -->
@@ -154,16 +153,18 @@
               </form>
             </li>
             <li class="dep0_2">
-              <a href="#">로그인</a>
+              <a href="#" class="dep0_2">로그인</a>
             </li>
             <li class="dep0_2">
-              <a href="#">회원가입</a>
+              <a href="#" class="dep0_2">회원가입</a>
             </li>
             <li class="dep0_2">
-              <a href="#">인증센터</a>
+              <a href="#" class="dep0_2">인증센터</a>
             </li>
             <li class="dep0_2">
-              <a href="#">Global &nbsp;<i class="fas fa-chevron-down"></i></a>
+              <a href="#" class="dep0_2"
+                >Global &nbsp;<i class="fas fa-chevron-down"></i
+              ></a>
             </li>
           </ul>
         </nav>
@@ -176,6 +177,7 @@
                     ><img
                       src="./images/logo_on1.png"
                       alt="건강보험심사평가원메뉴"
+                      id="logo_img"
                   /></a>
                 </li>
                 <li>
@@ -375,6 +377,12 @@
           <li data-menuanchor="brandVisual"></li>
         </ul>
         <div class="w1280">
+          <div class="weather_api">
+            <div id="container_weather"></div>
+            <a href="https://www.data.go.kr/data/15084084/openapi.do"
+              >출처:기상청</a
+            >
+          </div>
           <div class="slogan pa">
             <span class="top">SMART HIRA, BETTER HEALTH</span>
             <span class="bottom">건강보험심사평가원</span>
@@ -385,8 +393,11 @@
             <li></li>
           </ul>
           <ul id="stopbtn">
-            <li>
+            <li class="stopbtn_pause">
               <a href="#"><i class="far fa-pause-circle"></i></a>
+            </li>
+            <li class="stopbtn_play">
+              <a href="#"><i class="far fa-play-circle"></i></a>
             </li>
           </ul>
           <div class="func">

@@ -23,6 +23,7 @@ $(".dep1_0 li, .header_bottom_2")
 $(function () {
   const visual = $("#brandVisual>ul>li");
   const button = $("#buttonList>li");
+  const stopbutton = $("#stopbtn>li");
   let current = 0; //현재
   let btnIdx = 0; //클릭한 페이저 버튼의 인덱스
   let id; //setIntervalId
@@ -58,17 +59,6 @@ $(function () {
     current = btnIdx;
   }
 
-  //clearInterval
-  clearAuto();
-  function clearAuto() {
-    $("#brandVisual,#buttonList,.controls").mouseenter(function () {
-      clearInterval(id);
-    });
-    $("#brandVisual,#buttonList,.controls").mouseleave(function () {
-      timer();
-    });
-  }
-
   //좌우컨트롤버튼
   controls();
   function controls() {
@@ -99,6 +89,25 @@ $(function () {
       current = btnIdx;
     });
   }
+  mainvs_btn();
+  function mainvs_btn() {
+    let btn_play = $(".stopbtn_play");
+    let btn_stop = $(".stopbtn_pause");
+    btn_stop.click(function () {
+      btn_stop.css("z-index", 9);
+      btn_play.css("z-index", 10);
+      clearInterval(id);
+    });
+    btn_play.click(function () {
+      btn_play.css("z-index", 9);
+      btn_stop.css("z-index", 10);
+      timer();
+    });
+  }
+
+  $("#buttonList li").click(function () {
+    clearInterval(timer);
+  });
 }); //jQuery
 
 //----------------------------------------firstslide Global

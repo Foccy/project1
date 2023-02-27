@@ -77,11 +77,11 @@ async function setPosts() {
   cast.rainInfo();
   cast.loc();
   tr.innerHTML = `
-  <td>오늘 날짜: ${cast.baseDate}</td>
-  <td>지역:${locText}</td>
-  <td>강수형태: ${statusText}${rainIcon}</td>
-  <td>기온: ${cast.temprature} 도</td>
-  <td>바람: ${cast.wind}/ms</td>
+  <p>오늘 날짜: ${cast.baseDate}</p>
+  <p>지역:${locText}</p>
+  <p>강수형태: ${statusText}${rainIcon}</p>
+  <p>기온: ${cast.temprature} 도</p>
+  <p>바람: ${cast.wind}/ms</p>
   `;
   castEl.appendChild(tr);
   castBox.appendChild(castEl);

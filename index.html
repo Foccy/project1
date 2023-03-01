@@ -89,6 +89,7 @@
     <!-- sticky menu -->
     <div id="quickMenu">
       <button type="button" id="quickOpen">Quick<br />Menu</button>
+      <button type="button" id="quickClose">닫기</button>
       <ul class="quick_list">
         <li>
           <button type="button">
@@ -105,12 +106,6 @@
           <button type="button">
             <i class="fas fa-search-plus"></i><br />
             상담문의
-          </button>
-        </li>
-        <li>
-          <button type="button">
-            <i class="fas fa-times-circle"></i><br />
-            닫기
           </button>
         </li>
       </ul>
@@ -162,9 +157,13 @@
               <a href="#" class="dep0_2">인증센터</a>
             </li>
             <li class="dep0_2">
-              <a href="#" class="dep0_2"
+              <a href="#" class="dep0_2" id="global"
                 >Global &nbsp;<i class="fas fa-chevron-down"></i
               ></a>
+            </li>
+            <li id="global_toggle">
+              <a href="#">ENGLISH</a> <br />
+              <a href="#">SPAINSH</a>
             </li>
           </ul>
         </nav>

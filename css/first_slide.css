@@ -62,6 +62,26 @@
   border-radius: 100%;
   cursor: pointer;
 }
+#quickClose {
+  display: none;
+  position: absolute;
+  right: 0px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: -0.33px;
+  background-color: #007aad;
+  border: none;
+  background-image: linear-gradient(
+    -50deg,
+    #7184e8 0%,
+    #5266cf 42%,
+    #283991 100%
+  );
+  width: 100%;
+  height: 71px;
+  border-radius: 100%;
+  cursor: pointer;
+}
 #toTop {
   width: 100%;
   height: 71px;
@@ -69,6 +89,9 @@
   cursor: pointer;
   background-color: #646464;
   border: none;
+}
+.quick_list {
+  display: none;
 }
 .quick_list button {
   width: 100%;
@@ -175,6 +198,23 @@ header .header_top {
 }
 .dep0_2 i {
   color: white;
+}
+#global_toggle {
+  position: absolute;
+  display: none;
+  top: 45px;
+  right: 25px;
+  width: 71px;
+  height: 69px;
+  background-color: white;
+  border: none;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+#global_toggle a {
+  margin-top: 5px;
+  font-size: 15px;
 }
 .header_top .dep0 li input {
   border: none;
@@ -421,11 +461,20 @@ section h3 {
   z-index: 99999;
   transform: translate(200px, -15px);
 }
-#stopbtn i {
+.stopbtn_play {
+  display: none;
+}
+.stopbtn_pause {
+  display: block;
+}
+.stopbtn_pause i {
   color: white;
   font-size: 24px;
 }
-
+.stopbtn_play i {
+  color: white;
+  font-size: 24px;
+}
 #buttonList {
   display: flex;
   position: absolute;

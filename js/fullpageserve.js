@@ -17,6 +17,8 @@ $(document).ready(function () {
         $("#header") > $("a").css("color", "black");
         $("#logo_img").attr("src", "./images/logo_off1.png");
         $(".search_bar::after").attr("background", "#000000c4");
+        $(".changeButton li a").css("color", "white");
+        $(".footul li a").css("color", "gray");
       } else if ((idx = 1)) {
         $("#header").css(
           "background",
@@ -32,6 +34,7 @@ $(document).ready(function () {
         $(".dep0_2 i").css("color", "white");
         $(".dep0_2").css("color", "white");
         $("#logo_img").attr("src", "./images/logo_on1.png");
+        $(".changeButton li a").css("color", "white");
       }
       if (idx == 5) {
         activeMenu = $("#fp-nav")

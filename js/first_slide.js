@@ -94,13 +94,13 @@ $(function () {
     let btn_play = $(".stopbtn_play");
     let btn_stop = $(".stopbtn_pause");
     btn_stop.click(function () {
-      btn_stop.css("z-index", 9);
-      btn_play.css("z-index", 10);
+      btn_stop.css("display", "none");
+      btn_play.css("display", "block");
       clearInterval(id);
     });
     btn_play.click(function () {
-      btn_play.css("z-index", 9);
-      btn_stop.css("z-index", 10);
+      btn_play.css("display", "none");
+      btn_stop.css("display", "block");
       timer();
     });
   }
@@ -130,11 +130,18 @@ $(function () {
 //   .click(function () {
 //     $("dep0_1_1").stop().slideUp(1000);
 //   });
+$(document).ready(function () {
+  $("#global").click(function () {
+    $("#global_toggle").slideToggle("slow");
+  });
+});
 //--------------------------------------------quick menu
 
-let quickMenu = $(".quick_list");
-
-quickMenu.cli;
+$(document).ready(function () {
+  $("#quickOpen").click(function () {
+    $(".quick_list").slideToggle("slow");
+  });
+});
 
 //--------------------------------------------first slide depth,color query
 

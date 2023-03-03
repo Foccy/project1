@@ -186,6 +186,9 @@
 .info3-1-3 {
   margin-left: 25px;
 }
+.info3-1-3 a:nth-child(3){
+  display: none;
+}
 .info3-1-3 a i:hover {
   background-color: rgb(179, 179, 179);
   color: white;

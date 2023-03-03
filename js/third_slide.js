@@ -45,19 +45,14 @@ $(function () {
     total = list.find("li").length,
     li_width = list.find("li").eq(0).width(),
     copyObj = list.find("li").clone(),
-    ctrl = $(".ctrl");
+    ctrl = $(".pause");
+    console.log(total);
 
   list.append(copyObj);
 
-  const timer = setInterval(autoplay, 2000);
-  clearInterval(timer);
-  setInterval(autoplay, 4000);
-  ctrl.click(function () {
-    if (ctrl.text() === "stop") {
-      ctrl.text("play");
-    }
-    console.log(ctrl.text() === "stop");
-  });
+  const timer1 = setInterval(autoplay, 2000);
+  clearing = clearInterval(timer1);
+  third_id = setInterval(autoplay, 4000);
 
   function autoplay() {
     if (num == total) {
@@ -66,6 +61,14 @@ $(function () {
     }
     num++;
     list.stop().animate({ "margin-left": -li_width * num }, 1000);
+  }
+  bannerNum()
+  function bannerNum(){
+    for(i=0; i<total+1; i++){
+      let carauselNum = i
+      console.log(carauselNum);
+      $('.info3-1-2').text(carauselNum + `/` + total)
+    }
   }
 
   $(".next").click(function () {
@@ -78,6 +81,22 @@ $(function () {
     return false;
   });
 
+  third_rolling();
+  function third_rolling() {
+  let btn_play1 = $(".play1");
+  let btn_stop1 = $(".pause1");
+  btn_stop1.click(function () {
+    clearInterval(third_id);
+    btn_stop1.css("display", "none");
+    btn_play1.css("display", "inline-block");
+  });
+  btn_play1.click(function () {
+    btn_play1.css("display", "none");
+    btn_stop1.css("display", "inline-block");
+    setInterval(timer1)
+  });
+}
+
   $(".prev").click(function () {
     if (num == 0) {
       num = total; //3
@@ -88,6 +107,7 @@ $(function () {
     return false;
   });
 });
+
 
 //-----------------------------------------third courasel -------------------------
 

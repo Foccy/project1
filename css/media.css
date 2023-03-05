@@ -1,27 +1,27 @@
 @media (max-width: 1350px) {
-  header .header_bottom,
-  .header_top {
+  header .header_lnb,
+  .header_wrap {
     display: none;
   }
-  header .header_top_hidden {
+  header .header_top_query {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 1350px;
     margin: 10px 10px;
   }
-  header .header_top_hidden .dep0_1 {
+  header .header_top_query .header_top_query_popopen {
     display: flex;
   }
-  header .header_top_hidden .dep0_1 li a {
+  header .header_top_query .header_top_query_popopen li a {
     font-size: 8px;
     color: white;
     padding-right: 20px;
   }
-  header .header_top_hidden .dep0_1 li i {
+  header .header_top_query .header_top_query_popopen li i {
     font-size: 20px;
   }
-  header .header_top_hidden .dep0_1 li:first-child i {
+  header .header_top_query .header_top_query_popopen li:first-child i {
     position: absolute;
     right: 120px;
     top: 10px;

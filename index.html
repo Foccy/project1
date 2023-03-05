@@ -1,78 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <script
-      async="async"
-      src="https://www.googletagmanager.com/gtag/js?id=G-RESE0YTH7T"
-    ></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-RESE0YTH7T"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-RESE0YTH7T");
     </script>
     <!-- Google tag (link) (gtag.js) -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scgale=1.0" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://foccy.github.io/project_1/" />
-    <meta property="og:title" content="건강보험심사평가원" />
-    <meta
-      property="og:image"
-      content="https://foccy.github.io/project_1/images/logo_on1.png"
-    />
-    <meta property="og:description" content="건강보험" />
-    <meta property="og:site_name" content="HIRA" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="표시되는 이미지" />
-    <meta property="og:title" content="웹사이트 이름" />
-    <meta property="og:description" content="웹페이지 설명" />
-    <!-- meta -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- favion -->
-    <title>건강보험심사평가원</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <!-- googlefont -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <!-- reset css -->
-    <link rel="stylesheet" href="css/first_slide.css" />
-    <link rel="stylesheet" href="css/second_slide.css" />
-    <link rel="stylesheet" href="css/third_slide.css" />
-    <link rel="stylesheet" href="css/fourth_slide.css" />
-    <link rel="stylesheet" href="css/footer_slide.css" />
-    <!-- section css -->
-    <link rel="stylesheet" href="css/media.css" />
-    <!-- media css -->
-  </head>
 
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scgale=1.0"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://foccy.github.io/project_1/"/>
+    <meta property="og:title" content="건강보험심사평가원"/>
+    <meta property="og:image" content="https://foccy.github.io/project_1/images/logo_on1.png"/>
+    <meta property="og:description" content="건강보험"/>
+    <meta property="og:site_name" content="HIRA"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="표시되는 이미지"/>
+    <meta property="og:title" content="웹사이트 이름"/>
+    <meta
+    property="og:description" content="웹페이지 설명"/>
+    <!-- meta -->
+
+    <title>건강보험심사평가원</title>
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+
+    <link rel="stylesheet" href="css/media.css"/>
+
+  </head>
   <body>
     <div id="layer">
       <p>
-        이 사이트는 학습용으로 제작하였으며<br />
-        건강보험심사평가원과 무관합니다.<br />
-        구직용 포트폴리오로<br />
+        이 사이트는 학습용으로 제작하였으며<br/>
+        건강보험심사평가원과 무관합니다.<br/>
+        구직용 포트폴리오로<br/>
         상업적 목적이 없음을 알립니다.
       </p>
-
       <button>닫기</button>
     </div>
     <!-- popup -->
-    <ul class="side_bar_menu" id="menu">
+
+    <ul class="skip_menu" id="menu">
       <li data-menuanchor="brandVisual">
         <a href="#brandVisual">Main</a>
       </li>
@@ -86,46 +73,48 @@
         <a href="#fourth_slide">Service</a>
       </li>
     </ul>
-    <!-- sticky menu -->
-    <div id="quickMenu">
-      <button type="button" id="quickOpen">Quick<br />Menu</button>
-      <button type="button" id="quickClose">닫기</button>
-      <ul class="quick_list">
+    <!-- skip_menu -->
+
+    <div id="quick_menu">
+      <button type="button" id="quick_menu_open">Quick<br/>Menu</button>
+      <button type="button" id="quick_menu_close">닫기</button>
+      <ul class="quick_menu_list">
         <li>
           <button type="button">
-            <i class="fas fa-book"></i><br />용어사전
+            <i class="fas fa-book"></i><br/>용어사전
           </button>
         </li>
         <li>
           <button type="button">
-            <i class="fas fa-user-circle"></i><br />
+            <i class="fas fa-user-circle"></i><br/>
             고객센터
           </button>
         </li>
         <li>
           <button type="button">
-            <i class="fas fa-search-plus"></i><br />
+            <i class="fas fa-search-plus"></i><br/>
             상담문의
           </button>
         </li>
       </ul>
-      <button type="button" id="toTop">
-        <i class="fas fa-arrow-alt-circle-up"></i><br />TOP
+      <button type="button" id="quick_menu_totop">
+        <i class="fas fa-arrow-alt-circle-up"></i><br/>TOP
       </button>
     </div>
+    <!-- quick menu sticky -->
+
     <header class="w100" id="header">
-      <div class="header_cover">
-        <nav class="header_top_hidden">
-          <ul class="dep0 fl">
+      <div class="header_2">
+        <nav class="header_top_query">
+          <ul class="header_top_query_img fl">
             <li>
-              <a href="#"
-                ><img src="./images/logo_on1.png" alt="건강보험심사평가원"
-              /></a>
+              <a href="#"><img src="./images/btn_logo_on1.png" alt="건강보험심사평가원"/></a>
             </li>
           </ul>
-          <ul class="dep0_1">
+          <ul class="header_top_query_popopen">
             <li>
-              <a href="#">팝업<br />열기<i class="fas fa-chevron-down"></i> </a>
+              <a href="#">팝업<br/>열기<i class="fas fa-chevron-down"></i>
+              </a>
             </li>
             <li class="search_bar">
               <a href="#">
@@ -139,69 +128,68 @@
             </li>
           </ul>
         </nav>
-        <nav class="header_top w1280">
-          <ul class="dep0 pa">
-            <li class="search_bar">
+        <!-- header_top_query -->
+        <nav class="top_menu w1280">
+          <ul class="top_menu_ul pa">
+            <li class="top_menu_searchbar">
               <form action="#">
-                <input type="search" placeholder="검색어를 입력하세요" />
-                <span class="material-symbols-outlined"> search </span>
+                <input type="search" placeholder="검색어를 입력하세요"/>
+                <span class="material-symbols-outlined">
+                  search
+                </span>
               </form>
             </li>
-            <li class="dep0_2">
-              <a href="#" class="dep0_2">로그인</a>
+            <li class="top_menu_list">
+              <a href="#" class="top_menu_btn">로그인</a>
             </li>
-            <li class="dep0_2">
-              <a href="#" class="dep0_2">회원가입</a>
+            <li class="top_menu_list">
+              <a href="#" class="top_menu_btn">회원가입</a>
             </li>
-            <li class="dep0_2">
-              <a href="#" class="dep0_2">인증센터</a>
+            <li class="top_menu_list">
+              <a href="#" class="top_menu_btn">인증센터</a>
             </li>
-            <li class="dep0_2">
-              <a href="#" class="dep0_2" id="global"
-                >Global &nbsp;<i class="fas fa-chevron-down"></i
-              ></a>
+            <li class="top_menu_list">
+              <a href="#" id="global" >Global &nbsp;<i class="fas fa-chevron-down" ></i>
+              </a>
             </li>
-            <li id="global_toggle">
-              <a href="#">ENGLISH</a> <br />
+            <li id="top_menu_glbtoggle">
+              <a href="#">ENGLISH</a>
+              <br/>
               <a href="#">SPAINSH</a>
             </li>
           </ul>
         </nav>
-        <nav class="header_bottom pr">
-          <div class="header_bottom_wrap w100">
-            <div class="header_bottom_1 w1280">
-              <ul class="dep1_0">
+        <!-- top_menu -->
+        <nav class="gnb pr">
+          <div class="gnb_wrap1 w100">
+            <div class="w1280">
+              <ul class="gnb_dep1">
                 <li>
-                  <a href="#"
-                    ><img
-                      src="./images/logo_on1.png"
-                      alt="건강보험심사평가원메뉴"
-                      id="logo_img"
-                  /></a>
+                  <a href="#"><img src="./images/btn_logo_on1.png" alt="건강보험심사평가원메뉴" id="logo_img"/></a>
                 </li>
                 <li>
                   <h2>
-                    <a href="#" class="dep1_0_1">의료정보</a>
+                    <a href="#" class="dep1_btn">의료정보</a>
                   </h2>
                 </li>
                 <li>
                   <h2>
-                    <a href="#" class="dep1_0_2">조회.신청</a>
+                    <a href="#" class="dep1_btn">조회.신청</a>
                   </h2>
                 </li>
                 <li>
                   <h2>
-                    <a href="#" class="dep1_0_3">제도.정책</a>
+                    <a href="#" class="dep1_btn">제도.정책</a>
                   </h2>
                 </li>
                 <li>
                   <h2>
-                    <a href="#" class="dep1_0_4">국민소통</a>
+                    <a href="#" class="dep1_btn">국민소통</a>
                   </h2>
                 </li>
                 <li>
                   <h2>
-                    <a href="#" class="dep1_0_5">기관소식</a>
+                    <a href="#" class="dep1_btn">기관소식</a>
                   </h2>
                 </li>
                 <li>
@@ -212,22 +200,23 @@
               </ul>
             </div>
           </div>
-          <div class="header_bottom_2 pr">
-            <ul class="dep1">
-              <li class="dep1_1">
-                <ul class="dep2">
+          <div class="gnb_wrap2 pr">
+            <ul class="gnb_dep2">
+              <li class="gnb_dep2_list1">
+                <ul class="dep2_btn">
                   <li>
-                    <img src="./images/lnb_bg.png" alt="전체메뉴 한눈에 보기" />
+                    <img src="./images/gnb_dep2_on.png" alt="전체메뉴 한눈에 보기"/>
                   </li>
                 </ul>
               </li>
-              <li class="dep1_2 script1">
-                <ul class="dep2">
+              <li class="gnb_dep2_list2 script1">
+                <ul class="dep2_btn">
                   <li>
                     <a href="#">의료평가정보</a>
                   </li>
                   <li>
-                    <a href="#">병원 · 약국찾기<i class="far fa-paste"></i> </a>
+                    <a href="#">병원 · 약국찾기<i class="far fa-paste"></i>
+                    </a>
                   </li>
                   <li>
                     <a href="#">특수운영기관 정보</a>
@@ -245,22 +234,18 @@
                     <a href="#">건강정보</a>
                   </li>
                   <li>
-                    <a href="#"
-                      >호흡기환자진료센터(원스톱진료기관) 정보<i
-                        class="far fa-paste"
-                      ></i>
+                    <a href="#">호흡기환자진료센터(원스톱진료기관) 정보<i class="far fa-paste"></i>
                     </a>
                   </li>
                 </ul>
               </li>
-              <li class="dep1_2 script2">
-                <ul class="dep2">
+              <li class="gnb_dep2_list2 script2">
+                <ul class="dep2_btn">
                   <li>
                     <a href="#">내가 먹는 약! 한눈에</a>
                   </li>
                   <li>
-                    <a href="#"
-                      >비급여진료비정보<i class="far fa-paste"></i>
+                    <a href="#">비급여진료비정보<i class="far fa-paste"></i>
                     </a>
                   </li>
                   <li>
@@ -280,8 +265,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dep1_2 script3">
-                <ul class="dep2">
+              <li class="gnb_dep2_list2 script3">
+                <ul class="dep2_btn">
                   <li>
                     <a href="#">보험인정기준</a>
                   </li>
@@ -308,8 +293,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dep1_2 script4">
-                <ul class="dep2">
+              <li class="gnb_dep2_list2 script4">
+                <ul class="dep2_btn">
                   <li>
                     <a href="#">고객의 소리</a>
                   </li>
@@ -336,8 +321,8 @@
                   </li>
                 </ul>
               </li>
-              <li class="dep1_2 script5">
-                <ul class="dep2">
+              <li class="gnb_dep2_list2 script5">
+                <ul class="dep2_btn">
                   <li>
                     <a href="#">심평원 소개</a>
                   </li>
@@ -367,399 +352,421 @@
             </ul>
           </div>
         </nav>
+        <!-- gnb -->
       </div>
     </header>
-    <!-- side section bar -->
+    <!-- header -->
+
     <div id="fullpage">
       <div class="section" id="section1">
-        <ul>
-          <li data-menuanchor="brandVisual"></li>
-        </ul>
-        <div class="w1280">
+        <div class="utility w1280">
           <div class="weather_api">
             <div id="container_weather"></div>
-            <a href="https://www.data.go.kr/data/15084084/openapi.do"
-              >출처:기상청</a
-            >
+            <a href="https://www.data.go.kr/data/15084084/openapi.do">출처:기상청</a>
           </div>
           <div class="slogan pa">
             <span class="top">SMART HIRA, BETTER HEALTH</span>
             <span class="bottom">건강보험심사평가원</span>
           </div>
-          <ul id="buttonList">
+          <ul id="btn_list">
             <li class="on"></li>
             <li></li>
             <li></li>
           </ul>
-          <ul id="stopbtn">
-            <li class="stopbtn_pause">
-              <a href="#"><i class="far fa-pause-circle"></i></a>
+          <ul id="stop_btn">
+            <li class="stop_btn_pause">
+              <a href="#">
+                <i class="far fa-pause-circle"></i>
+              </a>
             </li>
-            <li class="stopbtn_play">
-              <a href="#"><i class="far fa-play-circle"></i></a>
+            <li class="stop_btn_play">
+              <a href="#">
+                <i class="far fa-play-circle"></i>
+              </a>
             </li>
           </ul>
-          <div class="func">
-            <ul class="changeButton">
+          <div class="main_func">
+            <ul class="change_btn">
               <li>
-                <a href="#mainfunc1">국민</a>
+                <a href="#main_func_tab_1">국민</a>
               </li>
               <li>
-                <a href="#mainfunc2">기관</a>
+                <a href="#main_func_tab_2">기관</a>
               </li>
             </ul>
-            <div class="func2">
-              <ul id="mainfunc2" class="mainfunc2 pa">
+            <div class="main_func_tab">
+              <ul id="main_func_tab_2" class="main_func_tab_2 pa">
                 <li>
                   <a href="#">
-                    <i class="fas fa-folder-plus"></i> 보험인정기준
+                    <i class="fas fa-folder-plus"></i>
+                    보험인정기준
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-notes-medical"></i> 약제기준정보
+                    <i class="fas fa-notes-medical"></i>
+                    약제기준정보
                   </a>
                 </li>
                 <li>
-                  <a href="#"> <i class="fas fa-file-word"></i> 병원 평가 </a>
+                  <a href="#">
+                    <i class="fas fa-file-word"></i>
+                    병원 평가
+                  </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-file-invoice-dollar"></i> 비급여 진료비<br />
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    비급여 진료비<br/>
                     정보
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-prescription-bottle-alt"></i>의약품<br />
-                    통합정보</a
-                  >
+                    <i class="fas fa-prescription-bottle-alt"></i>의약품<br/>
+                    통합정보</a>
                 </li>
-                <li>
-                  <a href="#"> <i class="fas fa-file-medical"></i>공지사항</a>
-                </li>
-              </ul>
-              <ul id="mainfunc1" class="mainfunc1 pa">
                 <li>
                   <a href="#">
-                    <i class="fas fa-pills"></i> 내가먹는 약!<br />
+                    <i class="fas fa-file-medical"></i>공지사항</a>
+                </li>
+              </ul>
+              <ul id="main_func_tab_1" class="main_func_tab_1 pa">
+                <li>
+                  <a href="#">
+                    <i class="fas fa-pills"></i>
+                    내가먹는 약!<br/>
                     한눈에
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-file-invoice-dollar"></i> 비급여 진료비<br />
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    비급여 진료비<br/>
                     정보
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-search-plus"></i> 우리 지역 좋은<br />
+                    <i class="fas fa-search-plus"></i>
+                    우리 지역 좋은<br/>
                     병원 찾기
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-laptop-medical"></i> 비급여 진료비<br />
+                    <i class="fas fa-laptop-medical"></i>
+                    비급여 진료비<br/>
                     확인 서비스
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <i class="fas fa-briefcase-medical"></i>내 진료정보<br />
-                    열람</a
-                  >
+                    <i class="fas fa-briefcase-medical"></i>내 진료정보<br/>
+                    열람</a>
                 </li>
                 <li>
-                  <a href="#"> <i class="fas fa-file-medical"></i>공지사항</a>
+                  <a href="#">
+                    <i class="fas fa-file-medical"></i>공지사항</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <!-- utility -->
         <section id="brandVisual" class="w100">
           <h6></h6>
-          <ul class="visual0">
-            <li class="visual_0">
-              <a href="#"></a>
-            </li>
+          <ul class="visual">
             <li class="visual_1">
               <a href="#"></a>
             </li>
             <li class="visual_2">
               <a href="#"></a>
             </li>
+            <li class="visual_3">
+              <a href="#"></a>
+            </li>
           </ul>
-          <!-- slideImage -->
         </section>
-      </div>
+        <!-- slideImage -->
+      </div><!-- section1 -->
+
       <div class="section">
-        <ul>
-          <li data-menuanchor="second_slide"></li>
-        </ul>
         <section id="second_slide" class="w100">
-          <div class="container w1280">
+          <div class="w1280">
             <div class="hold">&nbsp;</div>
             <h2>HIRA Clip</h2>
             <h3>다양한 의료정보 서비스를 이용하세요.</h3>
-            <div class="wrap pr">
-              <ul class="menu1">
-                <li class="menu1-1 active">
-                  <a href="#menu2-1">
-                    <i class="fas fa-mouse"></i> HIRA 소통채널
+            <div class="hiraclip_container pr">
+              <ul class="hiraclip_content1">
+                <li class="hiraclip_content1_list1 active">
+                  <a href="#hiraclip_content2_list1">
+                    <i class="fas fa-mouse"></i>
+                    HIRA 소통채널
                   </a>
                 </li>
-                <li class="menu1-2">
-                  <a href="#menu2-2">
-                    <i class="fas fa-cloud-upload-alt"></i> 보건연구·빅데이터
+                <!-- 1st tab -->
+                <li class="hiraclip_content1_list2">
+                  <a href="#hiraclip_content2_list2">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    보건연구·빅데이터
                   </a>
                 </li>
-                <li class="menu1-3">
-                  <a href="#menu2-3">
-                    <i class="far fa-hospital"></i> 정책·정보
+                <!-- 2st tab -->
+                <li class="hiraclip_content1_list3">
+                  <a href="#hiraclip_content2_list3">
+                    <i class="far fa-hospital"></i>
+                    정책·정보
                   </a>
                 </li>
-                <li class="menu1-4">
-                  <a href="#menu2-4"> <i class="fas fa-dna"></i> 건강정보 </a>
+                <!-- 3st tab -->
+                <li class="hiraclip_content1_list4">
+                  <a href="#hiraclip_content2_list4">
+                    <i class="fas fa-dna"></i>
+                    건강정보
+                  </a>
                 </li>
+                <!-- 4st tab -->
               </ul>
-              <div class="menu2_wrap">
-                <div id="menu2-4" class="menu2 w1280 pa dn">
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">HIRA 건강지도</p>
+              <div class="hiraclip_content2">
+                <div id="hiraclip_content2_list4" class="menu2 w1280 pa dn">
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">HIRA 건강지도</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">우리동네 병원·약국 찾기</p>
-                      <p class="p3">
-                        병원 종류별·진료과목별, 약국찾기<br /><br />
+                    <div class="card_p2">
+                      <p class="card_p3">우리동네 병원·약국 찾기</p>
+                      <p class="card_p4">
+                        병원 종류별·진료과목별, 약국찾기<br/><br/>
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0401.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_41.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">내 진료정보 열람람</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">내 진료정보 열람람</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">내 진료정보를 바로 열람</p>
-                      <p class="p3">
-                        내 진료내역 바로 열람 가능<br />
+                    <div class="card_p2">
+                      <p class="card_p3">내 진료정보를 바로 열람</p>
+                      <p class="card_p4">
+                        내 진료내역 바로 열람 가능<br/>
                         (건강보험·의료급여·자동차보험)
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0402.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_42.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">의약품안전사용서비스</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">의약품안전사용서비스</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">내가 먹는 약! 어떤 약일까?</p>
-                      <p class="p3">
-                        내가 먹는 약들이 금기 또는 사용중지<br />
+                    <div class="card_p2">
+                      <p class="card_p3">내가 먹는 약! 어떤 약일까?</p>
+                      <p class="card_p4">
+                        내가 먹는 약들이 금기 또는 사용중지<br/>
                         약물인지 확인 가능
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0403.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_43.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">통계로 보는 질병정보</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">통계로 보는 질병정보</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">생활 속 질병통계 보기</p>
-                      <p class="p3">
-                        HIRA 빅데이터로 분석한 유용한<br />
+                    <div class="card_p2">
+                      <p class="card_p3">생활 속 질병통계 보기</p>
+                      <p class="card_p4">
+                        HIRA 빅데이터로 분석한 유용한<br/>
                         질병통계 정보
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0404.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_44.png" alt=""/>
                     </div>
                   </div>
                 </div>
                 <!-- 4st tab -->
-                <div id="menu2-3" class="menu2 w1280 pa dn">
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">보험인정기준</p>
+                <div id="hiraclip_content2_list3" class="menu2 w1280 pa dn">
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">보험인정기준</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">행위, 약제, 치료재료 보험기준</p>
-                      <p class="p3">
-                        급여기준, 심사지침, 행정해석 등 <br />
+                    <div class="card_p2">
+                      <p class="card_p3">행위, 약제, 치료재료 보험기준</p>
+                      <p class="card_p4">
+                        급여기준, 심사지침, 행정해석 등
+                        <br/>
                         보험기준 관련 정보 제공
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0301.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_31.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">약제기준정보</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">약제기준정보</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">항암제 등 약제업무 관련 자료</p>
-                      <p class="p3">
-                        항암제 급여기준 및 세부자료,<br />
+                    <div class="card_p2">
+                      <p class="card_p3">항암제 등 약제업무 관련 자료</p>
+                      <p class="card_p4">
+                        항암제 급여기준 및 세부자료,<br/>
                         약제급여목록표 등 약제 업무 자료
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0302.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_32.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">의약품통합정보</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">의약품통합정보</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">의약품 정보를 쉽고 빠르게</p>
-                      <p class="p3">
-                        의약품별 허가정보 및 보험약가 등<br />
+                    <div class="card_p2">
+                      <p class="card_p3">의약품 정보를 쉽고 빠르게</p>
+                      <p class="card_p4">
+                        의약품별 허가정보 및 보험약가 등<br/>
                         상세 정보 제공
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0303.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_33.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">HIRA e-Book</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">HIRA e-Book</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">심사평가원 발간 책자</p>
-                      <p class="p3">
-                        요양급여, 평가, 연구 ,보고서 등 <br />다양한 e-Book 제공
+                    <div class="card_p2">
+                      <p class="card_p3">심사평가원 발간 책자</p>
+                      <p class="card_p4">
+                        요양급여, 평가, 연구 ,보고서 등
+                        <br/>다양한 e-Book 제공
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0304.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_34.png" alt=""/>
                     </div>
                   </div>
                 </div>
                 <!-- 3st tab -->
-                <div id="menu2-2" class="menu2 w1280 pa dn">
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">의료통계정보</p>
+                <div id="hiraclip_content2_list2" class="menu2 w1280 pa dn">
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">의료통계정보</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">공공데이터</p>
-                      <p class="p3">의료빅데이터 등 이용하기<br /><br /></p>
+                    <div class="card_p2">
+                      <p class="card_p3">공공데이터</p>
+                      <p class="card_p4">의료빅데이터 등 이용하기<br/><br/></p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0201.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_21.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">통계자료실</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">통계자료실</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">HIRA 통계간행물</p>
-                      <p class="p3">
-                        건강보험통계연보, 진료비통계지표 등<br />
+                    <div class="card_p2">
+                      <p class="card_p3">HIRA 통계간행물</p>
+                      <p class="card_p4">
+                        건강보험통계연보, 진료비통계지표 등<br/>
                         통계간행물 수록 시민참여위원회 등
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0202.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_22.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">연구보고서</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">연구보고서</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">심사평가원 발간 연구보고서</p>
-                      <p class="p3">내부, 위탁 연구보고서<br /><br /></p>
+                    <div class="card_p2">
+                      <p class="card_p3">심사평가원 발간 연구보고서</p>
+                      <p class="card_p4">내부, 위탁 연구보고서<br/><br/></p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0203.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_23.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">HIRA Research</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">HIRA Research</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">심사평가원 공식학술지</p>
-                      <p class="p3">
-                        보건의료 분야의 다양한 학술논문 게재<br /><br />
+                    <div class="card_p2">
+                      <p class="card_p3">심사평가원 공식학술지</p>
+                      <p class="card_p4">
+                        보건의료 분야의 다양한 학술논문 게재<br/><br/>
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0204.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_24.png" alt=""/>
                     </div>
                   </div>
                 </div>
                 <!-- 2st tab -->
-                <div id="menu2-1" class="menu2 w1280 pa df">
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">심평정보통</p>
+                <div id="hiraclip_content2_list1" class="menu2 w1280 pa df">
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">심평정보통</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">의료 정책ㆍ사업 정보 채널</p>
-                      <p class="p3">
-                        호흡기환자진료센터 (원스톱진료기관)<br />
+                    <div class="card_p2">
+                      <p class="card_p3">의료 정책ㆍ사업 정보 채널</p>
+                      <p class="card_p4">
+                        호흡기환자진료센터 (원스톱진료기관)<br/>
                         등 안내
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0101.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_11.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">커뮤니티</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">커뮤니티</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">내·외부 고객과의 소통 채널</p>
-                      <p class="p3">
-                        심평원 이사회 소통채널, QI커뮤니티,<br />
+                    <div class="card_p2">
+                      <p class="card_p3">내·외부 고객과의 소통 채널</p>
+                      <p class="card_p4">
+                        심평원 이사회 소통채널, QI커뮤니티,<br/>
                         시민참여위원회 등
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0102.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_12.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">개선건의</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">개선건의</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">급여기준 개선건의</p>
-                      <p class="p3">
-                        의료행위, 치료재료, 약제에 대한<br />
+                    <div class="card_p2">
+                      <p class="card_p3">급여기준 개선건의</p>
+                      <p class="card_p4">
+                        의료행위, 치료재료, 약제에 대한<br/>
                         급여기준 개선안 건의
                       </p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0103.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_13.png" alt=""/>
                     </div>
                   </div>
-                  <div class="wrap_card">
-                    <div class="p">
-                      <p class="p1">채용공고</p>
+                  <div class="hiraclip_card">
+                    <div class="card_p0">
+                      <p class="card_p1">채용공고</p>
                     </div>
-                    <div class="p0">
-                      <p class="p2">역량있는 인재 모집</p>
-                      <p class="p3">현재 진행 중인 채용공고 확인<br />&nbsp;</p>
+                    <div class="card_p2">
+                      <p class="card_p3">역량있는 인재 모집</p>
+                      <p class="card_p4">현재 진행 중인 채용공고 확인<br/>&nbsp;</p>
                     </div>
-                    <div class="card">
-                      <img src="./images/@tab_content0201.png" alt="" />
+                    <div class="card_img">
+                      <img src="./images/tab_content_14.png" alt=""/>
                     </div>
                   </div>
                 </div>
@@ -768,207 +775,160 @@
             </div>
           </div>
         </section>
-      </div>
+      </div><!-- section2 -->
+
       <div class="section">
-        <ul>
-          <li data-menuanchor="third_slide"></li>
-        </ul>
         <section id="third_slide" class="w100">
-          <div class="wrap w1280">
+          <div class=" container w1280">
             <div class="hold">&nbsp;</div>
             <h2>HIRA News</h2>
-            <div class="wrap0 w100 df">
-              <div class="wrap1">
-                <!-- w100 >> width 1,2랑 배분-->
-                <div class="info1">
-                  <ul class="info1-1">
+            <div class="hiranews_top w100 df">
+              <div class="hiranews_notice">
+                <div class="notice_info1">
+                  <ul class="notice_info1_list1">
                     <li>
-                      <a href="#info2-2-1" class="activate">전체</a>
+                      <a href="#notice_info2_tab1" class="activate">전체</a>
                     </li>
                     <li>
-                      <a href="#info2-2-2">공지사항</a>
+                      <a href="#notice_info2_tab2">공지사항</a>
                     </li>
                     <li>
-                      <a href="#info2-2-3">보도자료</a>
+                      <a href="#notice_info2_tab3">보도자료</a>
                     </li>
                     <li>
-                      <a href="#info2-2-4">입찰공고</a>
+                      <a href="#notice_info2_tab4">입찰공고</a>
                     </li>
                     <li>
-                      <a href="#info2-2-5">채용공고</a>
+                      <a href="#notice_info2_tab5">채용공고</a>
                     </li>
                   </ul>
                 </div>
-                <div class="info2">
-                  <div id="info2-2-1">
-                    <ul class="info2-1">
+                <div class="notice_info2">
+                  <div id="notice_info2_tab1">
+                    <ul class="info2_contentsbox">
                       <li>
                         <a href="#">
                           <span class="category-notice01">보도자료</span>
-                          &nbsp; 심평원, 지역사회 소방안전 강화를 위한 지원</a
-                        >
+                          &nbsp; 심평원, 지역사회 소방안전 강화를 위한 지원</a>
                         <span class="date">2023-01-01</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice02">공지사항</span
-                          >「암환자(요루) 재택의료 시범사업」참여기관 공모
-                          안내</a
-                        >
+                          <span class="category-notice02">공지사항</span>「암환자(요루) 재택의료 시범사업」참여기관 공모안내</a>
                         <span class="date">2023-01-02</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice03">입찰공고</span
-                          >「암환자(요루) 재택의료 시범사업」지침 안내</a
-                        >
+                          <span class="category-notice03">입찰공고</span>「암환자(요루) 재택의료 시범사업」지침 안내</a>
                         <span class="date">2023-01-03</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice04">공지사항</span
-                          >&nbsp;&nbsp;보험급여과-6094호(2022.12.9.)「코로나19
-                          통합 격리관리료」
+                          <span class="category-notice04">공지사항</span>&nbsp;&nbsp;보험급여과-6094호(2022.12.9.)「코로나19통합 격리관리료」
                         </a>
                         <span class="date">2023-01-04</span>
                       </li>
                     </ul>
                   </div>
-                  <div id="info2-2-2" class="info22">
-                    <ul class="info2-1">
+                  <div id="notice_info2_tab2" class="info_hide">
+                    <ul class="info2_contentsbox">
                       <li>
                         <a href="#">
                           <span class="category-notice02">공지사항</span>
-                          「영상검사 적정성 평가」 온라인 의견수렴 검토 결과
-                          안내</a
-                        >
+                          「영상검사 적정성 평가」 온라인 의견수렴 검토 결과안내</a>
                         <span class="date1">2023-01-01</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice02">공지사항</span
-                          >&nbsp;&nbsp;공지사항 건강보험심사평가원 1사옥
-                          영상정보처리기기 추가 설치</a
-                        >
+                          <span class="category-notice02">공지사항</span>&nbsp;&nbsp;공지사항 건강보험심사평가원 1사옥 영상정보처리기기 추가 설치</a>
                         <span class="date1">2023-01-02</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice02">공지사항</span
-                          >&nbsp;&nbsp;(집행정지 해제) 약제 급여 목록 및 급여
-                          상한금액표</a
-                        >
+                          <span class="category-notice02">공지사항</span>&nbsp;&nbsp;(집행정지 해제) 약제 급여 목록 및 급여상한금액표</a>
                         <span class="date1">2023-01-03</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice02">공지사항</span
-                          >&nbsp;&nbsp;[공상] 공상수가파일(23.1.1.부터
-                          적용)_공상코드
+                          <span class="category-notice02">공지사항</span>&nbsp;&nbsp;[공상] 공상수가파일(23.1.1.부터 적용)_공상코드
                         </a>
                         <span class="date1">2023-01-04</span>
                       </li>
                     </ul>
                   </div>
-                  <div id="info2-2-3" class="info22">
-                    <ul class="info2-1">
+                  <div id="notice_info2_tab3" class="info_hide">
+                    <ul class="info2_contentsbox">
                       <li>
                         <a href="#">
                           <span class="category-notice01">보도자료</span>
-                          &nbsp; 공급 중단 보고대상 의약품 재고현황 정보공개
-                          서비스 오픈</a
-                        >
+                          &nbsp; 공급 중단 보고대상 의약품 재고현황 정보공개 서비스 오픈</a>
                         <span class="date2">2023-01-01</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice01">보도자료</span
-                          >&nbsp;&nbsp;진료성과와 환자안전 중심으로 적정성 평가
-                          강화</a
-                        >
+                          <span class="category-notice01">보도자료</span>&nbsp;&nbsp;진료성과와 환자안전 중심으로 적정성 평가 강화</a>
                         <span class="date2">2023-01-02</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice01">보도자료</span
-                          >&nbsp;&nbsp;심사평가원, 2023년도 선별집중심사 항목
-                          공개</a
-                        >
+                          <span class="category-notice01">보도자료</span>&nbsp;&nbsp;심사평가원, 2023년도 선별집중심사 항목 공개</a>
                         <span class="date2">2023-01-03</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice01">보도자료</span
-                          >&nbsp;&nbsp;심평원, 지역 노인가구의 겨울나기 후원
+                          <span class="category-notice01">보도자료</span>&nbsp;&nbsp;심평원, 지역 노인가구의 겨울나기 후원
                         </a>
                         <span class="date2">2023-01-04</span>
                       </li>
                     </ul>
                   </div>
-                  <div id="info2-2-4" class="info22">
-                    <ul class="info2-1">
+                  <div id="notice_info2_tab4" class="info_hide">
+                    <ul class="info2_contentsbox">
                       <li>
                         <a href="#">
                           <span class="category-notice03">입찰공고</span>
-                          &nbsp; 사보 발간(기획·편집·디자인)용역</a
-                        >
+                          &nbsp; 사보 발간(기획·편집·디자인)용역</a>
                         <span class="date3">2023-01-01</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice03">입찰공고</span
-                          >&nbsp;&nbsp;(긴급) 코로나19 치료의료기관 시설철거비
-                          손실보상</a
-                        >
+                          <span class="category-notice03">입찰공고</span>&nbsp;&nbsp;(긴급) 코로나19 치료의료기관 시설철거비 손실보상</a>
                         <span class="date3">2023-01-02</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice03">입찰공고</span
-                          >&nbsp;&nbsp;건강보험심사평가원 창원지원 사옥(부동산)
-                          매각</a
-                        >
+                          <span class="category-notice03">입찰공고</span>&nbsp;&nbsp;건강보험심사평가원 창원지원 사옥(부동산) 매각</a>
                         <span class="date3">2023-01-03</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice03">입찰공고</span
-                          >&nbsp;&nbsp;코로나19 손실보상 업무지원 용역
+                          <span class="category-notice03">입찰공고</span>&nbsp;&nbsp;코로나19 손실보상 업무지원 용역
                         </a>
                         <span class="date3">2023-01-04</span>
                       </li>
                     </ul>
                   </div>
-                  <div id="info2-2-5" class="info22">
-                    <ul class="info2-1">
+                  <div id="notice_info2_tab5" class="info_hide">
+                    <ul class="info2_contentsbox">
                       <li>
                         <a href="#">
                           <span class="category-notice04">공지사항</span>
-                          &nbsp; 진료심사평가위원회 상근심사위원 서류심사 결과
-                          발표</a
-                        >
+                          &nbsp; 진료심사평가위원회 상근심사위원 서류심사 결과 발표</a>
                         <span class="date4">2023-01-01</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice04">공지사항</span
-                          >&nbsp;&nbsp;건강보험심사평가원 진료심사평가위원회
-                          상근심사위원 채용공고</a
-                        >
+                          <span class="category-notice04">공지사항</span>&nbsp;&nbsp;건강보험심사평가원 진료심사평가위원회 상근심사위원 채용공고</a>
                         <span class="date4">2023-01-02</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice04">공지사항</span
-                          >&nbsp;&nbsp;건강보험심사평가원 상임감사 공모</a
-                        >
+                          <span class="category-notice04">공지사항</span>&nbsp;&nbsp;건강보험심사평가원 상임감사 공모</a>
                         <span class="date4">2023-01-03</span>
                       </li>
                       <li>
                         <a href="#">
-                          <span class="category-notice04">공지사항</span
-                          >&nbsp;&nbsp;건강보험심사평가원 임원(기획상임이사)
-                          공모
+                          <span class="category-notice04">공지사항</span>&nbsp;&nbsp;건강보험심사평가원 임원(기획상임이사) 공모
                         </a>
                         <span class="date4">2023-01-04</span>
                       </li>
@@ -976,13 +936,13 @@
                   </div>
                 </div>
               </div>
-              <div class="wrap2">
+              <div class="hiranews_bannerzone">
                 <!-- w100 >> width 1,2랑 배분-->
-                <div class="info3">
-                  <ul class="info3-1">
-                    <li class="info3-1-1">배너존</li>
-                    <li class="info3-1-2">n/3</li>
-                    <li class="info3-1-3">
+                <div class="bannerzone">
+                  <ul class="bannerzone_contents">
+                    <li class="bannerzone_text">배너존</li>
+                    <li class="bannerzone_num"><p class="slide-now"></p><p class="slide-total"></p></li>
+                    <li class="bannerzone_btn">
                       <a href="#" class="prev">
                         <i class="fas fa-chevron-left"></i>
                       </a>
@@ -997,59 +957,56 @@
                       </a>
                     </li>
                   </ul>
-                  <div id="card3">
-                    <ul id="card3-1">
+                  <div id="bannerzone_card">
+                    <ul id="bannerzone_card_list">
                       <li>
-                        <a href="#"><img src="images/money.png" alt="" /></a>
+                        <a href="#"><img src="images/slide_money_1.png" alt=""/></a>
                       </li>
                       <li>
-                        <a href="#"
-                          ><img src="images/bogiclick.png" alt=""
-                        /></a>
+                        <a href="#"><img src="images/slide_bogiclick_2.png" alt=""/></a>
                       </li>
                       <li>
-                        <a href="#"><img src="images/hospital.png" alt="" /></a>
+                        <a href="#"><img src="images/slide_hospital_3.png" alt=""/></a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="wrap3 w100">
-              <div class="mainul pr w1280">
-                <ul class="wrap3-1">
-                  <li class="wrap3-1-1">SNS 소식</li>
+            <div class="hiranews_bottom w100">
+              <div class="hiranews_bottom_contents pr w1280">
+                <ul class="hiranews_sns">
+                  <li class="hiranews_sns_p1">SNS 소식</li>
                   <li>
-                    <p class="wrap3-1-2">
-                      심평원의 다양한<br />
+                    <p class="hiranews_sns_p2">
+                      심평원의 다양한<br/>
                       소식을 들어보세요.
                     </p>
                   </li>
                   <li>
-                    <ul class="wrap3-1-3">
-                      <li class="wrap3-1-3-1">
-                        <a href="#wrap3-1">
-                          <i class="fab fa-youtube-square"></i>YOUTUBE</a
-                        >
+                    <ul class="hiranews_sns_list">
+                      <li class="hiranews_sns_youtube">
+                        <a href="#hiranews_carasoul_box1">
+                          <i class="fab fa-youtube-square"></i>YOUTUBE</a>
                       </li>
-                      <li class="wrap3-1-3-2">
-                        <a href="#wrap3-2">
-                          <i class="fab fa-instagram"></i>INSTAGRAM</a
-                        >
+                      <li class="hiranews_sns_instagram">
+                        <a href="#hiranews_carasoul_box2">
+                          <i class="fab fa-instagram"></i>INSTAGRAM</a>
                       </li>
-                      <li class="wrap3-1-3-3">
-                        <a href="#wrap3-3">
-                          <i class="fab fa-facebook-f"></i>FACEBOOK</a
-                        >
+                      <li class="hiranews_sns_facebook">
+                        <a href="#hiranews_carasoul_box3">
+                          <i class="fab fa-facebook-f"></i>FACEBOOK</a>
                       </li>
-                      <li class="wrap3-1-3-4">
-                        <a href="#"> <i class="fas fa-blog"></i>BLOG</a>
-                        <a href="#"> <i class="far fa-envelope"></i>POST</a>
+                      <li class="hiranews_sns_blog">
+                        <a href="#">
+                          <i class="fas fa-blog"></i>BLOG</a>
+                        <a href="#">
+                          <i class="far fa-envelope"></i>POST</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
-                <ul class="wrap3-0-1">
+                <ul class="hiranews_sns_btn">
                   <li>
                     <a href="#" class="leftbtn">
                       <i class="fas fa-chevron-left"></i>
@@ -1059,20 +1016,15 @@
                     </a>
                   </li>
                 </ul>
-                <div class="wrap3-0">
-                  <div id="wrap3-1" class="df activation">
+                <div class="hiranews_carasoul">
+                  <div id="hiranews_carasoul_box1" class="df activation">
                     <ul>
                       <li>
-                        <a href="#"
-                          ><img src="./images/carasel1.png" alt=""
-                        /></a>
+                        <a href="#"><img src="./images/carasel1.png" alt=""/></a>
                       </li>
                       <li>
                         <h5>
-                          <img
-                            src="./images/sns_youtube2.png"
-                            alt=""
-                          />&nbsp;&nbsp;YOUTUBE
+                          <img src="./images/sns_youtube2.png" alt=""/>&nbsp;&nbsp;YOUTUBE
                         </h5>
                       </li>
                       <li>
@@ -1081,16 +1033,11 @@
                     </ul>
                     <ul>
                       <li>
-                        <a href="#"
-                          ><img src="./images/carasel2.png" alt=""
-                        /></a>
+                        <a href="#"><img src="./images/carasel2.png" alt=""/></a>
                       </li>
                       <li>
                         <h5>
-                          <img
-                            src="./images/sns_youtube2.png"
-                            alt=""
-                          />&nbsp;&nbsp;YOUTUBE
+                          <img src="./images/sns_youtube2.png" alt=""/>&nbsp;&nbsp;YOUTUBE
                         </h5>
                       </li>
                       <li>
@@ -1099,37 +1046,27 @@
                     </ul>
                     <ul>
                       <li>
-                        <a href="#"
-                          ><img src="./images/carasel3.png" alt=""
-                        /></a>
+                        <a href="#"><img src="./images/carasel3.png" alt=""/></a>
                       </li>
                       <li>
                         <h5>
-                          <img
-                            src="./images/sns_youtube2.png"
-                            alt=""
-                          />&nbsp;&nbsp;YOUTUBE
+                          <img src="./images/sns_youtube2.png" alt=""/>&nbsp;&nbsp;YOUTUBE
                         </h5>
                       </li>
                       <li>
                         <p>
                           스스로 진단해보는 턱관절 장애 TEST! [60초 셀프체크
-                          4화]
+                                                                                                        4화]
                         </p>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <a href="#"
-                          ><img src="./images/carasel4.png" alt=""
-                        /></a>
+                        <a href="#"><img src="./images/carasel4.png" alt=""/></a>
                       </li>
                       <li>
                         <h5>
-                          <img
-                            src="./images/sns_youtube2.png"
-                            alt=""
-                          />&nbsp;&nbsp;YOUTUBE
+                          <img src="./images/sns_youtube2.png" alt=""/>&nbsp;&nbsp;YOUTUBE
                         </h5>
                       </li>
                       <li>
@@ -1140,16 +1077,11 @@
                     </ul>
                     <ul>
                       <li>
-                        <a href="#"
-                          ><img src="./images/hqdefault.jpg" alt=""
-                        /></a>
+                        <a href="#"><img src="./images/hqdefault.jpg" alt=""/></a>
                       </li>
                       <li>
                         <h5>
-                          <img
-                            src="./images/sns_youtube2.png"
-                            alt=""
-                          />&nbsp;&nbsp;YOUTUBE
+                          <img src="./images/sns_youtube2.png" alt=""/>&nbsp;&nbsp;YOUTUBE
                         </h5>
                       </li>
                       <li>
@@ -1159,101 +1091,71 @@
                       </li>
                     </ul>
                   </div>
+                  <div id="hiranews_carasoul_box2" class="df activation">
+                  </div>
                 </div>
-                <!-- <div class="wrap3-0"> <div id="wrap3-2" class="df"> <ul> <li> <a
-                                href="#"><img src="./images/instacarasel1.jpg" alt=""/></a> </li> <li> <h5> <i
-                                class="fab fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>낮은 온도에 장시간
-                                노출되어 화상을 입는 것으로, 겨울철</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel2.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>술 마신 다음 날 찾아오는 불청객,
-                                숙취😵 숙취의</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel3.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>겨울철 낮은 기온으로 인해 수도관이
-                                파손되는 것으로,</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel4.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>건강의 첫걸음인 건강한 장! 장 건강
-                                해치는 생활 습관에는</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel5.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>아무리 유산균💊을 챙겨 먹어도 효과가
-                                잘 나타나지</p> </li> </ul> </div> </div> <div class="wrap3-0"> <div id="wrap3-3"
-                                class="df"> <ul> <li> <a href="#"><img src="./images/instacarasel1.jpg"
-                                alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>낮은 온도에 장시간 노출되어 화상을
-                                입는 것으로, 겨울철</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel2.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>술 마신 다음 날 찾아오는 불청객,
-                                숙취😵 숙취의</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel3.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>겨울철 낮은 기온으로 인해 수도관이
-                                파손되는 것으로,</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel4.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>건강의 첫걸음인 건강한 장! 장 건강
-                                해치는 생활 습관에는</p> </li> </ul> <ul> <li> <a href="#"><img
-                                src="./images/instacarasel5.jpg" alt=""/></a> </li> <li> <h5> <i class="fab
-                                fa-instagram"></i>&nbsp;&nbsp;INSTAGRAM</h5> </li> <li> <p>아무리 유산균💊을 챙겨 먹어도 효과가
-                                잘 나타나지</p> </li> </ul> </div> </div> -->
               </div>
             </div>
           </div>
         </section>
-      </div>
+      </div><!-- section3 -->
+
       <div class="section">
-        <ul>
-          <li data-menuanchor="fourth_slide"></li>
-        </ul>
         <section id="fourth_slide" class="w100">
           <div class="hold">&nbsp;</div>
           <h2>HIRA Service</h2>
-          <div class="wrap w1280">
-            <div class="flexbox">
-              <div class="flexbox1 pr">
+          <div class="hiraservice_container w1280">
+            <div class="service_left">
+              <div class="service_director pr">
                 <ul>
-                  <li class="jack1">
+                  <li class="director_intro">
                     <p>
-                      건강보험심사평가원장<br />
+                      건강보험심사평가원장<br/>
                       <b>김선민</b>입니다.
                     </p>
                   </li>
-                  <li class="jj">
+                  <li class="director_say">
                     <p>인사말</p>
                     <p>CEO 메시지</p>
                   </li>
                 </ul>
               </div>
-              <div class="flexbox2">
-                <ul class="jack2">
-                  <li class="jack2-1">
+              <div class="service_ico">
+                <ul class="service_ico_list">
+                  <li>
                     <a href="#">
                       <i class="fas fa-user-circle"></i>
-                      <span>조직도</span></a
-                    >
+                      <span>조직도</span>
+                    </a>
                   </li>
-                  <li class="jack2-2">
+                  <li>
                     <a href="#">
                       <i class="fas fa-map-marked-alt"></i>
-                      <span>오시는길</span></a
-                    >
+                      <span>오시는길</span>
+                    </a>
                   </li>
-                  <li class="jack2-3">
+                  <li>
                     <a href="#">
                       <i class="fas fa-wifi"></i>
-                      <span>HIRA시보</span></a
-                    >
+                      <span>HIRA시보</span>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="flex">
+            <div class="service_mid">
               <h3>주요연계업무</h3>
-              <ul class="flex1">
+              <ul class="service_work1">
                 <li>
                   <a href="#">1 요양기관업무포털</a>
                 </li>
                 <li>
-                  <a href="#">2 보건의료자원 통합신고포털 </a>
+                  <a href="#">2 보건의료자원 통합신고포털
+                  </a>
                 </li>
                 <li>
-                  <a href="#">3 e-평가시스템 </a>
+                  <a href="#">3 e-평가시스템
+                  </a>
                 </li>
                 <li>
                   <a href="#">4 보건의료 빅데이터개방시스템</a>
@@ -1265,102 +1167,25 @@
                   <a href="#">6 의약품관리종합정보센터</a>
                 </li>
               </ul>
-              <ul class="flex2">
+              <ul class="service_work2">
                 <li>
-                  <a href="#"><img src="./images/btn_up.png" alt="" /></a>
+                  <a href="#"><img src="./images/btn_up.png" alt=""/></a>
                 </li>
                 <li>
-                  <a href="#"><img src="./images/btn_down.png" alt="" /></a>
+                  <a href="#"><img src="./images/btn_down.png" alt=""/></a>
                 </li>
               </ul>
             </div>
-            <div class="container_box pr">
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
+            <div class="service_right pr">
+              <div class="service_container2 pa">
+                <ul class="service_right_box">
+                  <li class="service_right_box_li">요양기관업무포털</li>
+                  <li class="service_underline"></li>
+                  <li class="service_right_box_p">
+                    요양기관 업무포털시스템은 진료비 청구와 관련된<br/>각종정보제공과 심사진행과정 및 결과 조회,<br/>의료기준 관리,이의신청, 정산관리 등 다양한<br/>
+                    서비스를 제공합니다.<br/>
                   </li>
-                  <li class="jim1-3">
-                    <a href="#">바로가기 ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
-                  </li>
-                  <li class="jim1-3">
-                    <a href="#">바로가기 ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
-                  </li>
-                  <li class="jim1-3">
-                    <a href="#">바로가기 ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
-                  </li>
-                  <li class="jim1-3">
-                    <a href="#">바로가기 ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
-                  </li>
-                  <li class="jim1-3">
-                    <a href="#">바로가기 ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="container2 pa">
-                <ul class="jim1">
-                  <li class="jim1-1">요양기관업무포털</li>
-                  <li class="jim1-1-1"></li>
-                  <li class="jim1-2">
-                    요양기관 업무포털시스템은 진료비 청구와 관련된<br />각종
-                    정보제공과 심사진행과정 및 결과 조회,<br />의료기준 관리,
-                    이의신청, 정산관리 등 다양한<br />
-                    서비스를 제공합니다.<br />
-                  </li>
-                  <li class="jim1-3">
+                  <li class="service_right_box_anchor">
                     <a href="#">바로가기 ></a>
                   </li>
                 </ul>
@@ -1368,15 +1193,13 @@
             </div>
           </div>
         </section>
-      </div>
+      </div><!-- section4 -->
+
       <div class="section sectionfooter">
-        <ul>
-          <li data-menuanchor="footer_slide sectionfooter"></li>
-        </ul>
         <footer class="footer pr">
-          <div class="footer_inner1">
-            <div class="footer_inner1-1 w1280">
-              <ul class="footul">
+          <div class="footer_top">
+            <div class="footer_top_inner w1280">
+              <ul class="fnb_top">
                 <li>
                   <a href="#">고객지원</a>
                 </li>
@@ -1399,7 +1222,7 @@
                   <a href="#">인증센터</a>
                 </li>
               </ul>
-              <div class="float">
+              <div class="fnb_toggle">
                 <form action="#">
                   <fieldset class="selectbox">
                     <legend class="blind"></legend>
@@ -1427,29 +1250,31 @@
               </div>
             </div>
           </div>
-          <div class="footer_inner2">
-            <div class="footer_w1280 pr w1280">
-              <ul class="footul1">
+          <div class="footer_bottom">
+            <div class="footer_bottom_inner pr w1280">
+              <ul class="fnb_bottom">
                 <li>
-                  <a href="#"><img src="./images/logo_footer.png" alt="" /></a>
+                  <a href="#"><img src="./images/logo_footer.png" alt=""/></a>
                 </li>
                 <li>
-                  <ul class="footul2">
+                  <ul class="fnb_bottom_address">
                     <li>
-                      (우) 2614115, 경기도 수원시 혁성로 62(반노동)
-                      건강보험심사평가원
+                      (우) 2614115, 경기도 수원시 혁성로 62(반노동) 건강보험심사평가원
                     </li>
                     <li>
-                      COPYRIGHT ⓒ 2022 by HEALTH INSURANCE REVIEW & <br />
+                      COPYRIGHT ⓒ 2022 by HEALTH INSURANCE REVIEW &
+                      <br/>
                       ASSESSMENT SERVICE.
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <ul class="footul3">
+                  <ul class="fnb_bottom_customer">
                     <li>
                       <span>고객센터 ARS안내</span>
-                      <a href="tel:1644-2000"> <span>1644-2222</span></a>
+                      <a href="tel:1644-2000">
+                        <span>1644-2222</span>
+                      </a>
                     </li>
                     <li>고객센터상담: 09:00 ~ 18:00 (평일)</li>
                     <li>기타 조회서비스 및 상담예약: 연중무휴 24시간 운영</li>
@@ -1458,7 +1283,7 @@
                 <li>
                   <ul>
                     <li>
-                      <ul class="footul4 df">
+                      <ul class="fnb_bottom_snsico df">
                         <li>
                           <a href="#">
                             <i class="fab fa-facebook-f"></i>
@@ -1482,35 +1307,21 @@
                       </ul>
                     </li>
                     <li>
-                      <ul class="footul5 df">
+                      <ul class="fnb_bottom_btn df">
                         <li>
-                          <a href="#"
-                            ><img src="./images/cert_iso.png" alt=""
-                          /></a>
+                          <a href="#"><img src="./images/cert_iso.png" alt=""/></a>
                         </li>
                         <li>
-                          <a href="#"
-                            ><img src="./images/cert_acc.png" alt=""
-                          /></a>
+                          <a href="#"><img src="./images/cert_acc.png" alt=""/></a>
                         </li>
                         <li>
-                          <a href="#"><img src="./images/isms.png" alt="" /></a>
+                          <a href="#"><img src="./images/isms.png" alt=""/></a>
                         </li>
                         <li>
-                          <a
-                            href="https://validator.w3.org/check?uri=https://foccy.github.io/project_1/"
-                            ><img
-                              src="https://www.w3.org/QA/Tools/I_heart_validator_lg"
-                              alt="유효성검사"
-                          /></a>
+                          <a href="https://validator.w3.org/check?uri=https://foccy.github.io/project_1/"><img src="https://www.w3.org/QA/Tools/I_heart_validator_lg" alt="유효성검사"/></a>
                         </li>
                         <li>
-                          <a
-                            href="https://jigsaw.w3.org/css-validator/validator?uri=https://foccy.github.io/project_1/"
-                            ><img
-                              src="https://jigsaw.w3.org/css-validator/images/vcss"
-                              alt="유효성검사"
-                          /></a>
+                          <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://foccy.github.io/project_1/"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"/></a>
                         </li>
                       </ul>
                     </li>
@@ -1520,18 +1331,17 @@
             </div>
           </div>
         </footer>
-      </div>
+      </div><!-- section5 footer -->
     </div>
+    
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
     <script src="js/fullpage.js"></script>
     <script src="js/fullpageserve.js"></script>
-    <script src="js/scrollbar.js"></script>
-    <script src="js/first_slide.js"></script>
-    <script src="./js/date.js"></script>
-    <script src="./js/fetch.js"></script>
-    <script src="js/second_slide.js"></script>
-    <script src="js/third_slide.js"></script>
-    <script src="js/fourth_slide.js"></script>
-  </body>
+
+    <script src="js/main.js"></script>
+    <script src="js/fetch.js"></script>
+</body>
 </html>

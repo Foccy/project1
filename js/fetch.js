@@ -35,7 +35,6 @@ async function getPosts() {
 async function setPosts() {
   const posts = await getPosts();
   const datas = posts.response.body.items.item;
-  //동적요소생성
   const castEl = document.createElement("table");
   castEl.classList.add("table");
   const tr = document.createElement("tr");

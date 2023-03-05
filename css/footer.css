@@ -1,0 +1,44 @@
+.sectionfooter { height: 260px !important; } 
+
+.footer_top { width: 100%; height: 60px; top: -260px; background: #313849; } 
+.footer_top_inner { display: flex; justify-content: space-between; align-items: center; } 
+  .fnb_top { display: flex; margin-top: 0px; padding: 18px; } 
+  .fnb_top li:nth-child(3) > a { color: #b0b8e0; } 
+  .fnb_top li { padding: 0px 15px; border-right: 1px solid gray; } 
+  .fnb_top li a { font-size: 15px; color: gray; } 
+  .fnb_top li:hover { text-decoration: underline; } 
+
+  
+  
+  
+.footer_bottom { width: 100%; height: 200px; bottom: 0; background: #1e222a; } 
+  .fnb_bottom { display: flex; justify-content: space-between; padding: 32px 0 60px; } 
+  .fnb_bottom_address,
+  .fnb_bottom_customer { color: rgb(138, 138, 138); font-size: 15px; } 
+
+  /* address */
+  .fnb_bottom_address { position: absolute; right: 710px; line-height: 2.5; } 
+  .fnb_bottom_address li:nth-child(2) { line-height: 1.5; } 
+  
+  /* cumstomer service */
+  .fnb_bottom_customer { position: absolute; left: 650px; } 
+  .fnb_bottom_customer:first-child { line-height: 2; } 
+  .fnb_bottom_customer li a span { color: rgb(182, 182, 182); font-size: 22px; font-weight: 100; } 
+  .fnb_bottom_customer li:first-child { color: rgb(182, 182, 182); font-size: 15px; font-weight: bold; } 
+  .fnb_bottom_customer li:nth-child(3) { line-height: 1.2; } 
+  
+  .fnb_bottom_btn li { display: flex; padding: 5px; } 
+  .fnb_bottom_btn li img { width: 51px; height: 37px; } 
+
+  /* toggle */
+  .fnb_toggle select { font-size: 15px; border: 1px solid #909095; background-color: #ffffff00; padding: 7px; color: #909095; font-weight: 500; } 
+
+  /* sns ico */
+  .fnb_bottom_snsico { justify-content: flex-end; margin-bottom: 10px; } 
+  .fnb_bottom_snsico li a i { color: #d7d8da; text-align: center; font-size: 18px; line-height: 25px; width: 30px; height: 30px; border: none; border-radius: 100%; background-color: #383c45; margin-right: 8px; } 
+  .fnb_bottom_snsico li:first-child > a i:hover { background-color: #1634db; } 
+  .fnb_bottom_snsico li:nth-child(2) > a :hover { background: linear-gradient( 90deg,rgba(131, 58, 180, 1) 0%,rgba(253, 29, 29, 1) 50%,rgba(252, 176, 69, 1) 100%); } 
+  .fnb_bottom_snsico li:nth-child(3) > a :hover { background-color: red; } 
+  .fnb_bottom_snsico li:nth-child(4) > a :hover { background-color: rgb(2, 243, 2); } 
+
+

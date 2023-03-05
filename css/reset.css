@@ -4,14 +4,12 @@
   margin: 0;
   padding: 0;
 }
-
 /* a링크 초기화 */
 a {
   text-decoration: none;
   color: #222;
 }
 /* a:hover { color: #000; }  */
-
 /* 폰트초기화 */
 body {
   -webkit-font-smoothing: antialiased;
@@ -97,24 +95,20 @@ button {
 .db {
   display: block;
 }
-
 .w100 {
   max-width: 100%;
   width: 100%;
 }
-
 .w1280 {
   max-width: 1280px;
   width: 100%;
   margin: auto;
 }
-
 body a {
   font-size: 20px;
   line-height: 1.618;
   line-height: 1.75;
 }
-
 /* margin padding */
 .mb10 {
   margin-bottom: 10px !important;

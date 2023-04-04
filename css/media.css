@@ -1,6 +1,6 @@
-@media (max-width: 1350px) {
-  header .header_lnb,
-  .header_wrap {
+@media (max-width: 1024px) {
+  .top_menu,
+  .gnb {
     display: none;
   }
   header .header_top_query {
@@ -37,8 +37,8 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 768px) {
 }
 
-@media (max-width: 374px) {
+@media (max-width: 425px) {
 }

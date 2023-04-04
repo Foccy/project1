@@ -28,6 +28,7 @@ $(document).ready(function () {
         $("#header") > $(".dep1_btn").css("color", "white");
         $(".search_bar span").css("color", "white");
         $(".top_menu_list i").css("color", "white");
+        $(".top_menu_list a").css("color", "white");
         $(".top_menu_btn").css("color", "white");
         $("#logo_img").attr("src", "./images/btn_logo_on1.png");
         $(".change_btn li a").css("color", "white");

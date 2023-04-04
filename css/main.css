@@ -4,7 +4,9 @@
 #layer button { position: absolute; cursor: pointer; padding: 20px 30px; right: 0; border-radius: 10px; bottom: 0; background-color: #222; color: #fff; } 
 
 /* skip_menu */
-.skip_menu { position: fixed; z-index: 9999999999; top: 50%; } 
+.skip_menu { position: fixed; z-index: 9999999999; top: 50%; }
+.skip_menu li{ margin-top: 15px;}
+.skip_menu a {color: #1d1d1d; font-size: 16px; font-weight: 700; line-height: 1.4; letter-spacing: 0;} 
 
 /* quick menu sticky */
 #quick_menu { position: fixed; right: 40px; bottom: 70px; width: 71px; z-index: 9; } 
@@ -15,7 +17,8 @@
   .quick_menu_list button { width: 100%; height: 71px; border-radius: 100%; border: 1px solid #bdbdbd; background-color: #ffffff; text-align: center; color: #303030; font-weight: 700; text-align: center; letter-spacing: -0.65px; margin: 2.5px 0; line-height: 1.27; font-size: 13px; } 
   .quick_menu_list li i { font-size: 25px; } 
   
-#quick_menu_totop { width: 100%; height: 71px; border-radius: 100%; cursor: pointer; background-color: #646464; border: none; } 
+#quick_menu_totop { width: 100%; height: 71px; border-radius: 100%; cursor: pointer; background-color: #646464; border: none; margin-top: 10px;
+} 
 
   /* section1 */
 
@@ -219,7 +222,6 @@
     .service_right_box_p { font-size: 15px; color: white; padding: 25px 0px; } 
     .service_right_box_anchor a { font-size: 13px; font-weight: 600; line-height: 32px; text-align: center; border: none; border-radius: 30px; background-color: white; width: 111px; height: 32px; text-align: center; padding: 6px 25px; } 
     .service_right_box_anchor a:hover { color: white; background-color: #6479eb; } 
-
 
 
 
